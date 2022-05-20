@@ -26,16 +26,16 @@ After updating WordPress 5.8, it is recommended to install the plugin: Classic W
 ## Frequently Asked Questions
 **Is Really Simple Free?**<br>
 
-Yes. Really Simple is a free theme, and always will be a free theme.<br>
+- Yes. Really Simple is a free theme, and always will be a free theme.<br>
 
 **What size featured image should i use?**
 
-It is recommended to use the sizes: 2048x1365 or 1920x1280. These are the ideal sizes for you to use and have a beautiful website on all devices. The image height must not be less than 1280px.<br>
+- It is recommended to use the sizes: 2048x1365 or 1920x1280. These are the ideal sizes for you to use and have a beautiful website on all devices. The image height must not be less than 1280px.<br>
 
 **Is Really Simple Theme compatible with AMP?**
 
-Yes. Really Simple Theme is 100% AMP compatible.<br>
+- Yes. Really Simple Theme is 100% AMP compatible.<br>
 
 **Do you accept donations?**
 
-You can help me a lot to improve the project by purchasing a course through my affiliate link: [learn about WordPress](https://apretailer.com.br/click/6282efec2bfa81201c5bfe07/178617/234952/subaccount).
+- You can help me a lot to improve the project by purchasing a course through my affiliate link: [learn about WordPress](https://apretailer.com.br/click/6282efec2bfa81201c5bfe07/178617/234952/subaccount).

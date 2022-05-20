@@ -17,8 +17,8 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 
 ## Installation
 1. From the admin panel, go to Appearance > Themes and click the Add New button.
-2. Search for "Really Simple"
-3. Install and activate
+2. Search for "Really Simple".
+3. Install and activate.
 
 ## Frequently Asked Questions
 ### Is Really Simple Free?

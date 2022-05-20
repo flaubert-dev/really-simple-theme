@@ -55,30 +55,30 @@ After updating WordPress 5.8, it is recommended to install the plugin: Classic W
 
 - Fix: submenu design
 
-## 1.0.5 - 2021-08-07
+### 1.0.5 - 2021-08-07
 
 - Added X-UA compatible meta tag in header
 - Minor tweaks on author, blog and home pages
 
-## 1.0.4 - 2021-08-03
+### 1.0.4 - 2021-08-03
 
 - Added .POT file for language translation
 
-## 1.0.3 - 2021-08-01
+### 1.0.3 - 2021-08-01
 
 - CSS is lighter and easier to understand
 - Minor tweaks to error and search pages
 
-## 1.0.2 - 2021-07-31
+### 1.0.2 - 2021-07-31
 
 - Improved CSS organization
 - Really Simple Theme is now fully AMP compatible
 
-## 1.0.1 - 2021-07-29
+### 1.0.1 - 2021-07-29
 
 - Fixed underline links 
 - Fixed mobile menu
 
-## 1.0.0 - 2021-07-25
+### 1.0.0 - 2021-07-25
 
 - Initial release

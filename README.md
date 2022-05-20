@@ -20,13 +20,14 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 2. Search for "Really Simple"
 3. Install and activate
 
-## Customizations
-After updating WordPress 5.8, it is recommended to install the plugin: Classic Widgets. This plugin will improve the sidebar and prevent bugs.
-
 ## Frequently Asked Questions
 ### Is Really Simple Free?
 
 - Yes. Really Simple is a free theme, and always will be a free theme.<br>
+
+### How to adjust sidebar?
+
+- After updating WordPress 5.8, it is recommended to install the plugin: **Classic Widgets**. This plugin will improve the sidebar and prevent bugs.<br>
 
 ### What size featured image should i use?
 

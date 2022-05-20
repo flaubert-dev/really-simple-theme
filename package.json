@@ -1,4 +1,5 @@
 {
+  "_comment": "(!) required: NPM version <= v6.14.16",
   "author": "Flaubert Henriques",
   "name": "really-simple",
   "description": "Gulp Really Simple Theme",

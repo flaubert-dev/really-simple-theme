@@ -1,5 +1,8 @@
 /*
-* GULP VERSION: really-simple
+* GULP: really-simple
+* Author: Flaubert Henriques
+* Required: Node version <= v12.22.12
+* Required: NPM version <= v6.14.16
 */
 
 const gulp          = require('gulp');

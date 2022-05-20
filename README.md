@@ -2,7 +2,7 @@
 ## A theme for bloggers and writers who need a ultra light and fast theme
 Website: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
 Documentation: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
-Premium Support: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
+Premium Support: **henriquesdeveloper@gmail.com**<br>
 <br>
 **Requires at least**: WordPress 5.3<br>
 **Tested up to**: WordPress 5.8<br>

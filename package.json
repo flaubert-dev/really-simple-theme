@@ -1,0 +1,16 @@
+{
+  "author": "Flaubert Henriques",
+  "name": "really-simple",
+  "description": "Gulp Really Simple Theme",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "GPL"
+}

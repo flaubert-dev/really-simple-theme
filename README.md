@@ -1,4 +1,5 @@
 # Really Simple Theme
+## A theme for bloggers and writers who need a ultra light and fast theme
 Website: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
 Documentation: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
 Premium Support: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
@@ -21,3 +22,20 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 
 ## Customizations
 After updating WordPress 5.8, it is recommended to install the plugin: Classic Widgets. This plugin will improve the sidebar and prevent bugs.
+
+## Frequently Asked Questions
+**Is Really Simple Free?**<br>
+
+Yes. Really Simple is a free theme, and always will be a free theme.<br>
+
+**What size featured image should i use?**
+
+It is recommended to use the sizes: 2048x1365 or 1920x1280. These are the ideal sizes for you to use and have a beautiful website on all devices. The image height must not be less than 1280px.<br>
+
+**Is Really Simple Theme compatible with AMP?**
+
+Yes. Really Simple Theme is 100% AMP compatible.<br>
+
+**Do you accept donations?**
+
+You can help me a lot to improve the project by purchasing a course through my affiliate link: [learn about WordPress](https://apretailer.com.br/click/6282efec2bfa81201c5bfe07/178617/234952/subaccount).

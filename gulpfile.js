@@ -18,7 +18,7 @@ function compilaSass() {
 
 function browser() {
   browserSync.init({
-    proxy: "localhost/_0-tst-pesquisas/" 
+    proxy: "localhost" 
   });
 }
 

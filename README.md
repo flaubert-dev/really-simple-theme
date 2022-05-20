@@ -3,7 +3,6 @@ Website: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
 Documentation: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
 Premium Support: [Coming Soon](https://wordpress.org/themes/really-simple/)<br>
 <br>
-**Developer**: [Flaubert Henriques](https://profiles.wordpress.org/flauberthenriques/)<br>
 **Requires at least**: WordPress 5.3<br>
 **Tested up to**: WordPress 5.8<br>
 **Requires PHP**: 7.0<br>

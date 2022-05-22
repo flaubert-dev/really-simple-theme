@@ -1,15 +1,15 @@
 === Really Simple ===
 Requires at least: WordPress 5.3
-Tested up to: WordPress 5.8
+Tested up to: WordPress 5.9
 Requires PHP: 7.0
-Version: 1.0.8
-Stable tag: 1.0.8
+Version: 1.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 == Description ==
 
-Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the readme.txt file and leave the sidebar perfect after WordPress 5.8 update.
+Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.
 
 == Installation ==
 
@@ -22,20 +22,23 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 = Is Really Simple Free? =
 Yes. Really Simple is a free theme, and always will be a free theme.
 
+= How to adjust sidebar? =
+After updating WordPress 5.8, it is recommended to install the plugin: Classic Widgets. This plugin will improve the sidebar and prevent bugs.
+
 = What size featured image should i use? =
 It is recommended to use the sizes: 2048x1365 or 1920x1280. These are the ideal sizes for you to use and have a beautiful website on all devices. The image height must not be less than 1280px.
-
-= How do I get the same look as screenshot.png of Really Simple Theme? =
-After updating WordPress 5.8, it is recommended to install Classic Widgets so that the look is beautiful. You can find Classic Widgets by installing the plugin named: Classic Widgets.
 
 = Is Really Simple Theme compatible with AMP? =
 Yes. Really Simple Theme is 100% AMP compatible.
 
 = Do you offer support? =
-We offer vip support, read more in (https://profiles.wordpress.org/flauberthenriques/).
+We offer premium support, read more in (https://profiles.wordpress.org/flauberthenriques/).
 
 = Do you accept donations? =
 Yes. You can help us a lot by sending any amount to this paypal account: flaubinhoo@gmail.com
+
+= Does Really Simple Theme have an official repository on github? =
+Yes. Open source is here (https://github.com/Dev-Flaubert-Wordpress/really-simple-theme)
 
 == Copyright ==
 
@@ -63,38 +66,47 @@ Source:
 
 == Changelog ==
 
+= 1.1 - May 22 2021 =
+- New: Added "Really Simple Theme" option in admin bar
+- New: Added options in "Really Simple Theme" (admin bar)
+- Tweak: Tested up to WordPress 5.9
+- Tweak: CSS styling in "Really Simple Theme" option (admin bar)
+- Tweak: Really Simple Theme now has an official repository on github
+- Tweak: improvements and important notices in gulpfile.js
+- Tweak: improvements and important notices in package.json
+
 = 1.0.8 - December 04 2021 =
-* CSS fixes
-* Fix featured image on AMP sites
+- CSS fixes
+- Fix featured image on AMP sites
 
 = 1.0.7 - August 17 2021 =
-* Minor tweaks to general styles
-* Little adjustments to widget styles: search & calendar
+- Minor tweaks to general styles
+- Little adjustments to widget styles: search & calendar
 
 = 1.0.6 - August 14 2021 =
-* Fix: submenu design
+- Fix: submenu design
 
 = 1.0.5 - August 07 2021 =
-* Added X-UA compatible meta tag in header
-* Minor tweaks on author, blog and home pages
+- Added X-UA compatible meta tag in header
+- Minor tweaks on author, blog and home pages
 
 = 1.0.4 - August 03 2021 =
-* Added .POT file for language translation
+- Added .POT file for language translation
 
 = 1.0.3 - August 01 2021 =
-* CSS is lighter and easier to understand
-* Minor tweaks to error and search pages
+- CSS is lighter and easier to understand
+- Minor tweaks to error and search pages
 
 = 1.0.2 - July 31 2021 =
-* Improved CSS organization
-* Really Simple Theme is now fully AMP compatible
+- Improved CSS organization
+- Really Simple Theme is now fully AMP compatible
 
 = 1.0.1 - July 29 2021 =
-* Fixed underline links 
-* Fixed mobile menu
+- Fixed underline links 
+- Fixed mobile menu
 
-= 1.0.0 - July 25 2021 =
-* Initial release
+= 1.0 - July 25 2021 =
+- Initial release
 
 == Credits ==
 

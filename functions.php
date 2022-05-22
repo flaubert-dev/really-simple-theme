@@ -124,6 +124,26 @@ function really_simple_sidebar() {
 }
 add_action( 'widgets_init', 'really_simple_sidebar' );
 
+function really_simple_override_admin_bar_css() {
+  
+  // Styles "Really Simple Theme" option (admin bar)
+  if ( is_admin_bar_showing() ) {
+    printf( 
+      '<style>
+        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar,
+        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar a:hover,
+        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar a[aria-haspopup="true"] { 
+          background-color: #696969;
+          color: #fff;
+        }
+      </style>' 
+    );
+  }
+}
+add_action( 'admin_print_styles', 'really_simple_override_admin_bar_css' );
+add_action( 'admin_head', 'really_simple_override_admin_bar_css' );
+add_action( 'wp_head', 'really_simple_override_admin_bar_css' );
+
 function really_simple_category_title( $title ) {
 
   // Returns only the category name on the category page

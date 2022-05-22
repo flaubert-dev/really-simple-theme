@@ -69,7 +69,12 @@ Source:
 = 1.1 - May 22 2021 =
 - New: Added "Really Simple Theme" option in admin bar
 - New: Added options in "Really Simple Theme" (admin bar)
+- New: Added class ReallySimpleAdminBars
+- New: Added function really_simple_admin()
+- New: Added function really_simple_override_admin_bar_css()
 - Tweak: Tested up to WordPress 5.9
+- Tweak: Theme Description
+- Tweak: readme.txt
 - Tweak: CSS styling in "Really Simple Theme" option (admin bar)
 - Tweak: Really Simple Theme now has an official repository on github
 - Tweak: improvements and important notices in gulpfile.js

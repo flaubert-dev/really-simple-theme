@@ -8,6 +8,19 @@
  * 
  */
 
+/**
+ * Enqueue file for the Admin Bar
+ */
+require_once get_template_directory() . '/inc/admin-bar.php';
+
+/**
+ * Execution of the Admin Bar
+**/
+function really_simple_admin() {
+	$really_simple_admin_bar = new ReallySimpleAdminBars();  
+} 
+really_simple_admin();
+
 function really_simple_skip_link() {
 
   // Skip link

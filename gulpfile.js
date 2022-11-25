@@ -21,7 +21,7 @@ function compilaSass() {
 
 function browser() {
   browserSync.init({
-    proxy: "localhost" 
+    proxy: "localhost:8000" 
   });
 }
 

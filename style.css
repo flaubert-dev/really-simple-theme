@@ -4,9 +4,9 @@ Theme Name: Really Simple
 Author: Flaubert Henriques
 Author URI: https://profiles.wordpress.org/flauberthenriques/
 Description: Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.
-Version: 1.1
+Version: 1.2
 Requires at least: WordPress 5.3
-Tested up to: WordPress 5.9
+Tested up to: WordPress 6.1
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -25,7 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Generic
+# Reset CSS
 	- Normalize
   - Box sizing
 # Base
@@ -48,13 +48,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
-# Responsive (Media)
+# Responsive (media-queries)
 	- Tablet
 	- Mobile
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Generic
+# Reset CSS
 --------------------------------------------------------------*/
 /* Normalize
 --------------------------------------------- */
@@ -1702,7 +1702,7 @@ a img.aligncenter {
 }
 
 /*--------------------------------------------------------------
-# Responsive (Media)
+# Responsive (media-queries)
 --------------------------------------------------------------*/
 /* Tablet
 --------------------------------------------- */

@@ -1,0 +1,4 @@
+// font-size (function)
+@function rem($pixel, $contexto: 16) {
+  @return $pixel / $contexto + rem;
+}

@@ -1,9 +1,9 @@
 === Really Simple ===
 Requires at least: WordPress 5.3
-Tested up to: WordPress 5.9
+Tested up to: WordPress 6.1
 Requires PHP: 7.0
-Version: 1.1
-Stable tag: 1.1
+Version: 1.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -66,7 +66,12 @@ Source:
 
 == Changelog ==
 
-= 1.1 - May 22 2021 =
+= 1.2 - December 14 2022 =
+- Revision: SASS files
+- Tweak: Tested up to WordPress 6.1
+- Tweak: Updated proxy in gulp.js
+
+= 1.1 - May 22 2022 =
 - New: Added "Really Simple Theme" option in admin bar
 - New: Added options in "Really Simple Theme" (admin bar)
 - New: Added class ReallySimpleAdminBars

@@ -66,10 +66,10 @@ Source:
 
 == Changelog ==
 
-= 1.2 - December 14 2022 =
+= 1.2 - December 22 2022 =
 - Revision: SASS files
 - Tweak: Tested up to WordPress 6.1
-- Tweak: Updated proxy in gulp.js
+- Tweak: Updated ports (proxy) in gulp.js
 
 = 1.1 - May 22 2022 =
 - New: Added "Really Simple Theme" option in admin bar

@@ -2,8 +2,8 @@
 Requires at least: WordPress 5.3
 Tested up to: WordPress 6.1
 Requires PHP: 7.0
-Version: 1.2
-Stable tag: 1.2
+Version: 1.2.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -66,10 +66,11 @@ Source:
 
 == Changelog ==
 
-= 1.2 - December 22 2022 =
-- Revision: SASS files
-- Tweak: Tested up to WordPress 6.1
-- Tweak: Updated ports (proxy) in gulp.js
+= 1.2.0 - December 22 2022 =
+- Revision: sass directory (files .scss)
+- Revision: readme.txt (Changelog)
+- Updated: readme.txt (Tested up to WordPress 6.1)
+- Updated: gulpfile.js (ports (proxy)
 
 = 1.1 - May 22 2022 =
 - New: Added "Really Simple Theme" option in admin bar

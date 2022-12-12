@@ -23,9 +23,9 @@ class ReallySimpleAdminBars
   function __construct()
 	{
     add_action( 'admin_bar_menu', [ $this,'really_simple_item' ], 500);
+		add_action( 'admin_bar_menu', [ $this,'really_simple_update_item' ], 500);
 		add_action( 'admin_bar_menu', [ $this,'really_simple_doc_item' ], 500);
 		add_action( 'admin_bar_menu', [ $this,'really_simple_support_item' ], 500);
-		add_action( 'admin_bar_menu', [ $this,'really_simple_update_item' ], 500);
 	}
 
   /**
@@ -37,6 +37,19 @@ class ReallySimpleAdminBars
 			'parent'	=> null,
 			'title'		=> esc_html__( 'Really Simple Theme', 'really-simple' ),
 			'href'		=> 'https://wordpress.org/themes/really-simple/',
+			'meta'    => [ 'target' => '_blank' ],
+		]);
+	}
+
+  /**
+   * ReallySimpleAdminBars: really_simple_update_item( $admin_bar )
+   */
+	function really_simple_update_item( $admin_bar ){
+		$admin_bar->add_menu([
+			'id'		  => 'really-simple-admin-bar-update',
+			'parent'	=> 'really-simple-admin-bar',
+			'title'		=> esc_html__( 'Updates', 'really-simple' ),
+			'href'		=> 'https://github.com/Dev-Flaubert-Wordpress/really-simple-theme/releases',
 			'meta'    => [ 'target' => '_blank' ],
 		]);
 	}
@@ -63,19 +76,6 @@ class ReallySimpleAdminBars
 			'parent'	=> 'really-simple-admin-bar',
 			'title'		=> esc_html__( 'Support / Suggestions', 'really-simple' ),
 			'href'		=> 'https://wordpress.org/support/theme/really-simple/',
-			'meta'    => [ 'target' => '_blank' ],
-		]);
-	}
-
-  /**
-   * ReallySimpleAdminBars: really_simple_update_item( $admin_bar )
-   */
-	function really_simple_update_item( $admin_bar ){
-		$admin_bar->add_menu([
-			'id'		  => 'really-simple-admin-bar-update',
-			'parent'	=> 'really-simple-admin-bar',
-			'title'		=> esc_html__( 'Updates', 'really-simple' ),
-			'href'		=> 'https://github.com/Dev-Flaubert-Wordpress/really-simple-theme/releases',
 			'meta'    => [ 'target' => '_blank' ],
 		]);
 	}

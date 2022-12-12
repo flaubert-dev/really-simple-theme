@@ -66,7 +66,7 @@ Source:
 
 == Changelog ==
 
-= 1.2.0 - December 22 2022 =
+= 1.2.0 - December 20 2022 =
 - Revision: sass directory (files .scss)
 - Revision: readme.txt (Changelog)
 - Updated: readme.txt (Tested up to WordPress 6.1)

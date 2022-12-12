@@ -59,6 +59,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 @import "./_1_base/4_colors";
 @import "./_1_base/5_reset";
 @import "./_1_base/6_base";
-@import "1_components";
-@import "2_utilities";
-@import "3_responsive";
+@import "./_2_components/1_components";
+@import "./_2_components/2_responsive";
+@import "./_3_utilities/utilities";

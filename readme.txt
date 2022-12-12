@@ -69,6 +69,7 @@ Source:
 = 1.2.0 - December 20 2022 =
 - Revision: sass directory (files .scss)
 - Revision: readme.txt (Changelog)
+- Revision: readme.md
 - Updated: readme.txt (Tested up to WordPress 6.1)
 - Updated: gulpfile.js (ports (proxy)
 

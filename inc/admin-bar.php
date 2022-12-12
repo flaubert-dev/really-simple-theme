@@ -62,7 +62,7 @@ class ReallySimpleAdminBars
 			'id'		  => 'really-simple-admin-bar-documentation',
 			'parent'	=> 'really-simple-admin-bar',
 			'title'		=> esc_html__( 'Documentation', 'really-simple' ),
-			'href'		=> 'https://github.com/Dev-Flaubert-Wordpress/really-simple-theme#really-simple',
+			'href'		=> 'https://github.com/Dev-Flaubert-Wordpress/really-simple-theme#really-simple-theme',
 			'meta'    => [ 'target' => '_blank' ],
 		]);
 	}

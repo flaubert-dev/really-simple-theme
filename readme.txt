@@ -70,6 +70,7 @@ Source:
 - Revision: sass directory (files .scss)
 - Revision: readme.txt (Changelog)
 - Revision: readme.md
+- Revision: footer.php
 - Updated: readme.txt (Tested up to WordPress 6.1)
 - Updated: gulpfile.js (ports (proxy)
 

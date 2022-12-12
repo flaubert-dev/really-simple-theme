@@ -1,16 +1,12 @@
 # Really Simple
 
-A theme for bloggers and writers who need a ultra light and fast theme
+A theme for bloggers and writers who need a ultra light and fast theme.
 
-**WordPress Theme // Theme Developer**: 
 - **[Really Simple](https://wordpress.org/themes/really-simple/)** by **[Flaubert Henriques](https://profiles.wordpress.org/flauberthenriques/)**<br>
-
-**Want to be a sponsor of this project? Want to give suggestions? Contact me**: 
-- **henriquesdeveloper@gmail.com**<br>
 
 ## Description
 
-Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.<br>
+Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> [readme.txt](https://github.com/Dev-Flaubert-Wordpress/really-simple-theme/blob/develop/readme.txt) << file and leave the sidebar perfect after WordPress 5.8 update.<br>
 
 **Requires at least**: WordPress 5.3<br>
 **Requires at least**: PHP 7.0 or later<br>
@@ -33,3 +29,7 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 
 **Is Really Simple Theme compatible with AMP?**
 - Yes. Really Simple Theme is 100% AMP compatible.
+
+## Sponsor / Suggestions
+
+- Contact me: **henriquesdeveloper@gmail.com**

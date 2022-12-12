@@ -1,0 +1,200 @@
+# Copyright (C) 2021 Really Simple Theme
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Really Simple v1.0.4\n"
+"POT-Creation-Date: "
+"2021-08-03 08:13-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Flaubert "
+"Henriques "
+"<henriquesdeveloper@gmail."
+"com>\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit "
+"2.2.3\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: 404.php:13
+msgid "Page not found."
+msgstr ""
+
+#: 404.php:17
+msgid ""
+"The page you tried to "
+"access does not exist."
+msgstr ""
+
+#: 404.php:21
+#: template-parts/content-search.php:18
+msgid "Latest Posts"
+msgstr ""
+
+#: 404.php:26
+msgid "Back to home"
+msgstr ""
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid ""
+"One thought on &ldquo;"
+"%s&rdquo;"
+msgstr ""
+
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid ""
+"%1$s thought on &ldquo;"
+"%2$s&rdquo;"
+msgid_plural ""
+"%1$s thoughts on &ldquo;"
+"%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:75
+msgid ""
+"Comments are closed."
+msgstr ""
+
+#: footer.php:17
+msgid ""
+"https://wordpress.org/"
+msgstr ""
+
+#: footer.php:20
+#, php-format
+msgid ""
+"Proudly powered by %s"
+msgstr ""
+
+#: footer.php:26
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: functions.php:14
+msgid "Skip to content"
+msgstr ""
+
+#: functions.php:85
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:103
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:105
+msgid ""
+"Add widgets to the posts "
+"sidebar."
+msgstr ""
+
+#: header.php:59
+msgid "Close Menu"
+msgstr ""
+
+#: header.php:65
+msgid "Open Menu"
+msgstr ""
+
+#: search.php:18
+#, php-format
+msgid ""
+"Search Results for: %s"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "placeholder"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:18
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: single.php:21
+msgid "Previous:"
+msgstr ""
+
+#: single.php:22
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid ""
+"There are no posts yet. "
+"Post something "
+"interesting."
+msgstr ""
+
+#: template-parts/content-page.php:32
+#: template-parts/content-single.php:37
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:46
+#, php-format
+msgid ""
+"Edit <span class="
+"\"screen-reader-text\">"
+"%s</span>"
+msgstr ""
+
+#: template-parts/content-search.php:13
+msgid ""
+"No results were found, "
+"try searching for "
+"another word."
+msgstr ""
+
+#: template-parts/content-single.php:19
+msgid "Author: "
+msgstr ""
+
+#: template-parts/content-single.php:46
+msgid "Categories:"
+msgstr ""

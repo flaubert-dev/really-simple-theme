@@ -13,7 +13,7 @@
 - **[WooCommerce Theme Development: Advanced Course](https://apretailer.com.br/click/628a13e62bfa815324065ab7/281993/subaccount/url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fwoocommerce-wordpress-theme-development%2F)** // **[Criação de Temas com WooCommerce](https://apretailer.com.br/click/628a13e62bfa815324065ab7/281993/subaccount/url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fwoocommerce-wordpress-curso-avancado%2F)**
 
 ## Description
-Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible.<br>
+Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.<br>
 
 **Requires at least**: WordPress 5.3<br>
 **Requires at least**: PHP 7.0 or later<br>

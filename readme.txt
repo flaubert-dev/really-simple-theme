@@ -66,7 +66,7 @@ Source:
 
 == Changelog ==
 
-= 1.2.0 - December 20 2022 =
+= 1.2.0 - December 12 2022 =
 - Revision: sass directory (files .scss)
 - Revision: readme.txt (Changelog)
 - Revision: readme.md

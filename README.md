@@ -4,7 +4,7 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 
 **Requires at least**: WordPress 5.3<br>
 **Requires at least**: PHP 7.0 or later<br>
-**License URI**: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+**License URI**: https://www.gnu.org/licenses/gpl-3.0.html
 <br>
 
 ## Installation

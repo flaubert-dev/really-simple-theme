@@ -1,5 +1,6 @@
-{
-  "_comment": "(!) required: Node version <= v12.22.12 && NPM version <= v6.14.16",
+{ 
+  "_comment": "REQUIRED: Node version <= v12.22.12",
+  "_comment": "REQUIRED: NPM version <= v6.14.16",
   "author": "Flaubert Henriques",
   "name": "really-simple",
   "description": "Gulp Really Simple Theme",

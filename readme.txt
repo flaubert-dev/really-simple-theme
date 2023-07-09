@@ -66,6 +66,20 @@ Source:
 
 == Changelog ==
 
+= 2.0.0 - July 27 2023 =
+- New: Tablet support
+- New: Breakpoints and containers (Sass)
+- New: Function PX to REM (Sass)
+- New: Organization of components, layouts, pages... (Sass)
+- Fixes and improvements: bugs in styling and limitation in excerpt
+- Updated: README.md (for theme users, for Theme Devs & browser support)
+- Updated: .scss files
+- Updated: sass directory structure
+- Updated: .gitignore
+- Updated: package.json
+- Updated: readme.txt (Changelog)
+- Updated: style.css (Theme URI, Version, Tested up to & TABLE OF CONTENTS)
+
 = 1.2.0 - December 12 2022 =
 - Revision: sass directory (files .scss)
 - Revision: readme.txt (Changelog)

@@ -24,7 +24,16 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 **Is Really Simple Theme compatible with AMP?**
 - Yes. Really Simple Theme is 100% AMP compatible.
 
-## Sponsor / Suggestions
+## For Theme Users
+... (coming soon)
+
+## For Theme Devs
+... (coming soon)
+
+## Browser Support
+... (coming soon)
+
+## Details / Suggestions
 
 | Theme | Developer | LICENSE |
 | ------ | ------ | ------ |

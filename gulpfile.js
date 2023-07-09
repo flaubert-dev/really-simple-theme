@@ -1,8 +1,8 @@
 /*
 * GULP: really-simple
 * Author: Flaubert Henriques
-* Required: Node version <= v12.22.12
-* Required: NPM version <= v6.14.16
+* REQUIRED: Node version <= v12.22.12
+* REQUIRED: NPM version <= v6.14.16
 */
 
 const gulp          = require('gulp');
@@ -21,7 +21,7 @@ function compilaSass() {
 
 function browser() {
   browserSync.init({
-    proxy: "localhost:8000" 
+    proxy: "localhost"
   });
 }
 

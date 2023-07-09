@@ -4,8 +4,8 @@ Tested up to: WordPress 6.1
 Requires PHP: 7.0
 Version: 1.2.0
 Stable tag: 1.2.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
@@ -139,5 +139,5 @@ Source:
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2021 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+* Based on Underscores https://underscores.me/, (C) 2012-2021 Automattic, Inc., [GPLv3 or later](https://www.gnu.org/licenses/gpl-3.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2021 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)

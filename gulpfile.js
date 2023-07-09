@@ -3,6 +3,8 @@
 * Author: Flaubert Henriques
 * REQUIRED: Node version <= v12.22.12
 * REQUIRED: NPM version <= v6.14.16
+* License: GPLv3 or later
+* License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 const gulp          = require('gulp');

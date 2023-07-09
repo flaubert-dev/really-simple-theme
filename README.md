@@ -25,13 +25,55 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 - Yes. Really Simple Theme is 100% AMP compatible.
 
 ## For Theme Users
-... (coming soon)
+
+> Customize
+- **Identity**: ... (coming soon)
+- **Logo**: ... (coming soon)
+- **Menu**: ... (coming soon)
+- **Sidebar**: ... (coming soon)
+- **Footer**: ... (coming soon)
 
 ## For Theme Devs
-... (coming soon)
+
+> Requirements for Development
+- [PHP](https://www.php.net/manual/en/install.php) >= 7.0
+- [WordPress](https://wordpress.org/) >= 5.3
+- [Node.js](https://nodejs.org/en) <= v12.22.12
+- [NPM](https://www.npmjs.com/) <= v6.14.16
+
+> Plugins for Development
+- [Classic Widgets](https://wordpress.org/plugins/classic-widgets/)
+- [WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)
+- [Theme Check](https://wordpress.org/plugins/theme-check/)
+- [Theme Sniffer](https://github.com/WPTT/theme-sniffer#theme-sniffer)
+- [Show Current Template](https://wordpress.org/plugins/show-current-template/)
+- [Simply Show Hooks](https://wordpress.org/plugins/simply-show-hooks/)
+- [Monster Widget](https://wordpress.org/plugins/monster-widget/)
+
+> Validation
+- [HTML](https://validator.w3.org/#validate_by_upload+with_options)
+- [CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
+- [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test)
 
 ## Browser Support
-... (coming soon)
+
+- Chrome	>= ... (coming soon)
+- Edge		>= ... (coming soon)
+- Safari	>= ... (coming soon)
+- Firefox	>= ... (coming soon)
+- Opera	  >= ... (coming soon)
+- IE (no support)
+- Chrome for Android	>= ... (coming soon)
+- Safari on iOS	      >= ... (coming soon)
+- Samsung Internet	  >= ... (coming soon)
+- Opera Mobile		    >= ... (coming soon)
+- Android Browser	    >= ... (coming soon)
+- Firefox for Android	>= ... (coming soon)
+- Opera Mini (no support)
+- UC Browser for Android (no support)
+- QQ Browser (no support)
+- Baidu Browser (no support)
+- KaiOS Browser (no support)
 
 ## Details / Suggestions
 

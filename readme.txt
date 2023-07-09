@@ -67,7 +67,8 @@ Source:
 == Changelog ==
 
 = 2.0.0 - July 27 2023 =
-- New: Tablet support
+- New: Admin Notice
+- New: Tablet Support
 - New: Breakpoints and containers (Sass)
 - New: Function PX to REM (Sass)
 - New: Organization of components, layouts, pages... (Sass)

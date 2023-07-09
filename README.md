@@ -19,16 +19,15 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 - It is recommended to use the sizes: **2048x1365** or **1920x1280**. These are the ideal sizes for you to use and have a beautiful website on all devices. The image height must not be less than **1280px**.
 
 **How to adjust sidebar?**
-- After updating **WordPress 5.8**, it is recommended to install the plugin: **Classic Widgets**. This plugin will improve the sidebar and prevent bugs.
+- After updating **WordPress 5.8**, it is recommended to install the plugin: [Classic Widgets](https://wordpress.org/plugins/classic-widgets/). This plugin will improve the sidebar and prevent bugs.
 
 **Is Really Simple Theme compatible with AMP?**
 - Yes. Really Simple Theme is 100% AMP compatible.
 
 ## For Theme Users
 
-> Go to Dashboard / Appearance / Customize
-
 ![Go to Customize](./img-for-readme/appearance-customize.png)
+> Go to Appearance / Customize
 
 - **Identity**: ... (coming soon)
 - **Logo**: ... (coming soon)

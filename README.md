@@ -27,6 +27,9 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 ## For Theme Users
 
 > Go to Dashboard / Appearance / Customize
+
+![Go to Customize](./img-for-readme/appearance-customize.png)
+
 - **Identity**: ... (coming soon)
 - **Logo**: ... (coming soon)
 - **Menu**: ... (coming soon)

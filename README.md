@@ -29,11 +29,9 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 ![Go to Customize](./img-for-readme/appearance-customize.png)
 > Go to Appearance / Customize
 
-- **Identity**: ... (coming soon)
-- **Logo**: ... (coming soon)
-- **Menu**: ... (coming soon)
-- **Sidebar**: ... (coming soon)
-- **Footer**: ... (coming soon)
+- **Site Identity**: Enter the `Site Identity` section and then you can add a logo, a title for your website, tagline and an icon for your website. Remember that it is important for you to have all this information added so that your site has an identity on the web. 
+- **Menu**: Enter the `Menus` section and then choose the `View Location` option at the end. Right after, click on the `Create New Menu` option. Enter a name for your menu (example: header menu). In `Menu Location` leave the option `Primary Menu` checked and click `Next`. To create the menu the way you want it click on the `Add items` button.
+- **Sidebar**: Enter the `Widgets` section and then choose the content that will be shown in your Sidebar. Remember that your Sidebar can be very interesting if you install the plugin [Classic Widgets](https://wordpress.org/plugins/classic-widgets/).
 
 ## For Theme Devs
 

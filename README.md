@@ -29,9 +29,11 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 ![Go to Customize](./img-for-readme/appearance-customize.png)
 > Go to Appearance / Customize
 
-- **Site Identity**: Enter the `Site Identity` section and then you can add a logo, a title for your website, tagline and an icon for your website. Remember that it is important for you to have all this information added so that your site has an identity on the web. 
+- **Site Identity**: Enter the `Site Identity` section and then you can add a logo, a title for your website, tagline and an icon for your website. Remember that it is important for you to have all this information added so that your site has an identity on the web.
+
 - **Menu**: Enter the `Menus` section and then choose the `View Location` option at the end. Right after, click on the `Create New Menu` option. Enter a name for your menu (example: header menu). In `Menu Location` leave the option `Primary Menu` checked and click `Next`. To create the menu the way you want it click on the `Add items` button.
-- **Sidebar**: Enter the `Widgets` section and then choose the content that will be shown in your Sidebar. Remember that your Sidebar can be very interesting if you install the plugin [Classic Widgets](https://wordpress.org/plugins/classic-widgets/). The look of your sidebar may have some bugs if you use `block Widgets` or automatic ads.
+
+- **Sidebar**: Enter the `Widgets` section and then choose the content that will be shown in your Sidebar. Remember that your Sidebar can be very interesting if you install the plugin [Classic Widgets](https://wordpress.org/plugins/classic-widgets/). The look of your sidebar may have some bugs if you use `block Widgets` or `Automatic ads`.
 
 ## For Theme Devs
 
@@ -54,26 +56,6 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 - [HTML](https://validator.w3.org/#validate_by_upload+with_options)
 - [CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 - [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test)
-
-## Browser Support
-
-- Chrome	>= ... (coming soon)
-- Edge		>= ... (coming soon)
-- Safari	>= ... (coming soon)
-- Firefox	>= ... (coming soon)
-- Opera	  >= ... (coming soon)
-- IE (no support)
-- Chrome for Android	>= ... (coming soon)
-- Safari on iOS	      >= ... (coming soon)
-- Samsung Internet	  >= ... (coming soon)
-- Opera Mobile		    >= ... (coming soon)
-- Android Browser	    >= ... (coming soon)
-- Firefox for Android	>= ... (coming soon)
-- Opera Mini (no support)
-- UC Browser for Android (no support)
-- QQ Browser (no support)
-- Baidu Browser (no support)
-- KaiOS Browser (no support)
 
 ## Details / Suggestions
 

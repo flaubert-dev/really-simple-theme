@@ -16,7 +16,6 @@
  */
 class ReallySimpleAdminBars
 {
-
   /**
    * ReallySimpleAdminBars: __construct()
    */
@@ -79,5 +78,4 @@ class ReallySimpleAdminBars
 			'meta'    => [ 'target' => '_blank' ],
 		]);
 	}
-
 }

@@ -14,20 +14,47 @@
 require_once get_template_directory() . '/inc/admin-bar.php';
 
 /**
+ * Admin bar styling
+**/
+function really_simple_override_admin_bar_css() {
+  // Styles "Really Simple Theme" option (admin bar)
+  if ( is_admin_bar_showing() ) {
+    printf( 
+      '<style>
+        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar,
+        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar a:hover,
+        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar a[aria-haspopup="true"] { 
+          background-color: #696969;
+          color: #fff;
+        }
+      </style>' 
+    );
+  }
+}
+
+add_action( 'admin_print_styles', 'really_simple_override_admin_bar_css' );
+add_action( 'admin_head', 'really_simple_override_admin_bar_css' );
+add_action( 'wp_head', 'really_simple_override_admin_bar_css' );
+
+/**
  * Execution of the Admin Bar
 **/
 function really_simple_admin() {
 	$really_simple_admin_bar = new ReallySimpleAdminBars();  
-} 
-really_simple_admin();
+} add_action( 'init', 'really_simple_admin' );
 
+/**
+ * Execution of Skip link
+**/
 function really_simple_skip_link() {
 
   // Skip link
   echo '<a class="screen-reader-text skip-link" href="#main">' . esc_html__( 'Skip to content', 'really-simple' ) . '</a>';
-}
-add_action( 'wp_body_open', 'really_simple_skip_link', 5 );
+} add_action( 'wp_body_open', 'really_simple_skip_link', 5 );
 
+/**
+ * Register the initial theme setup
+**/
 function really_simple_support() {
 
   /*
@@ -88,18 +115,22 @@ function really_simple_support() {
     'flex-height' => true,
   ]);
 
-}
-add_action( 'after_setup_theme', 'really_simple_support' );
+} add_action( 'after_setup_theme', 'really_simple_support' );
 
+/**
+ * Register the navigation menus
+**/
 function really_simple_nav_menus() {
   
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus([
     'really-simple-primary-menu' => esc_html__( 'Primary Menu', 'really-simple' ),
   ]);
-}
-add_action( 'init', 'really_simple_nav_menus' );
+} add_action( 'init', 'really_simple_nav_menus' );
 
+/**
+ * Register the theme assets
+**/
 function really_simple_style() {
 
   // Theme's main stylesheet
@@ -108,9 +139,11 @@ function really_simple_style() {
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) { 
     wp_enqueue_script( 'comment-reply' ); 
   }
-}
-add_action( 'wp_enqueue_scripts', 'really_simple_style' );
+} add_action( 'wp_enqueue_scripts', 'really_simple_style' );
 
+/**
+ * Register the theme sidebars
+**/
 function really_simple_sidebar() {
   register_sidebar([
     'name'          => esc_html__( 'Sidebar', 'really-simple' ),
@@ -121,48 +154,33 @@ function really_simple_sidebar() {
     'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>'
   ]);
-}
-add_action( 'widgets_init', 'really_simple_sidebar' );
+} add_action( 'widgets_init', 'really_simple_sidebar' );
 
-function really_simple_override_admin_bar_css() {
-  
-  // Styles "Really Simple Theme" option (admin bar)
-  if ( is_admin_bar_showing() ) {
-    printf( 
-      '<style>
-        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar,
-        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar a:hover,
-        #wpadminbar ul#wp-admin-bar-root-default > #wp-admin-bar-really-simple-admin-bar a[aria-haspopup="true"] { 
-          background-color: #696969;
-          color: #fff;
-        }
-      </style>' 
-    );
-  }
-}
-add_action( 'admin_print_styles', 'really_simple_override_admin_bar_css' );
-add_action( 'admin_head', 'really_simple_override_admin_bar_css' );
-add_action( 'wp_head', 'really_simple_override_admin_bar_css' );
-
+/**
+ * Filter archive title
+**/
 function really_simple_category_title( $title ) {
 
   // Returns only the category name on the category page
   if( is_category() ) { 
     $title = single_cat_title( '', false ); 
   } return $title;
-}
-add_filter( 'get_the_archive_title', 'really_simple_category_title' );
+} add_filter( 'get_the_archive_title', 'really_simple_category_title' );
 
+/**
+ * Filter excerpt length
+**/
 function really_simple_excerpt_length( $length ) {
 
   // Return up to 25 words for any abstract
   return 25;
-}
-add_filter( 'excerpt_length', 'really_simple_excerpt_length' );
+} add_filter( 'excerpt_length', 'really_simple_excerpt_length' );
 
+/**
+ * Filter excerpt more
+**/
 function really_simple_excerpt_more( $more ) {
   
   // Any abstract will have a sequence ...
   return '...';
-}
-add_filter( 'excerpt_more', 'really_simple_excerpt_more' );
+} add_filter( 'excerpt_more', 'really_simple_excerpt_more' );

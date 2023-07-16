@@ -79,6 +79,7 @@ Source:
 - Updated: .gitignore
 - Updated: package.json
 - Updated: readme.txt (Changelog)
+- Updated: functions.php (Comments and Organization)
 - Updated: README.md (for theme users, for Theme Devs & browser support)
 - Updated: style.css (Theme URI, Version, Tested up to & TABLE OF CONTENTS)
 

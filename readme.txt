@@ -70,12 +70,12 @@ Source:
 - New: Admin Notice
 - New: Tablet Support
 - New: Footer (Date, Website title and more)
-- New: Breakpoints and containers (Sass)
-- New: Function PX to REM (Sass)
-- New: Organization of components, layouts, pages... (Sass)
+- New: Breakpoints and containers (Sass files)
+- New: Function PX to REM (Sass files)
+- New: Organization of components, layouts, pages... (Sass files)
 - Fixes and improvements: bugs in styling and limitation in excerpt
 - Updated: sass directory structure
-- Updated: .scss files
+- Updated: .scss files (Comments for now, please wait)
 - Updated: .gitignore
 - Updated: package.json
 - Updated: readme.txt (Changelog)

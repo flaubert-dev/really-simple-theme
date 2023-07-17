@@ -66,7 +66,7 @@ Source:
 
 == Changelog ==
 
-= 1.3.0 - July 16 2023 =
+= 1.3.0 - July 17 2023 =
 - New: Footer (Date, Website title, Theme URL & Licence URL)
 - New: Function PX to REM (Sass)
 - Updated: sass directory structure

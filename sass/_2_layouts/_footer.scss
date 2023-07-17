@@ -1,0 +1,20 @@
+.footer {
+  background-color: $white;
+  border-top: 1px solid $gray-7;
+  border-bottom: 1px solid $gray-7;
+  font-family: $font_arial;
+  font-size: px-to-rem(14);
+  color: $gray-2;
+  padding: px-to-rem(20);
+}
+
+.footer small {
+  font-size: px-to-rem(14); 
+}
+
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

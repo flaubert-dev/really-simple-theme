@@ -628,32 +628,6 @@
   width: 100%;
 }
 
-/* Footer
---------------------------------------------- */
-.site-footer {
-  background: $white;
-  border-top: 1px solid $gray-7;
-  border-bottom: 1px solid $gray-7;
-}
-
-.site-info {
-  @include font-size(extra_6);
-  color: $gray-2;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.site-info a {
-  color: $gray-2;
-}
-
-.site-info a:hover,
-.site-info a:focus {
-  color: $blue-dark;
-}
-
 /* Comments
 --------------------------------------------- */
 .comments-area {

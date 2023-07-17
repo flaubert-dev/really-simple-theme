@@ -1,9 +1,9 @@
 === Really Simple ===
 Requires at least: WordPress 5.3
-Tested up to: WordPress 6.1
+Tested up to: WordPress 6.2
 Requires PHP: 7.0
-Version: 1.2.0
-Stable tag: 1.2.0
+Version: 1.3.0
+Stable tag: 1.3.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,7 +47,7 @@ Really Simple is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
+the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
@@ -66,14 +66,9 @@ Source:
 
 == Changelog ==
 
-= 2.0.0 - July 27 2023 =
-- New: Admin Notice
-- New: Tablet Support
-- New: Footer (Date, Website title and more)
-- New: Breakpoints and containers (Sass files)
-- New: Function PX to REM (Sass files)
-- New: Organization of components, layouts, pages... (Sass files)
-- Fixes and improvements: bugs in styling and limitation in excerpt
+= 1.3.0 - July 16 2023 =
+- New: Footer (Date, Website title, Theme URL & Licence URL)
+- New: Function PX to REM (Sass)
 - Updated: sass directory structure
 - Updated: .scss files (Comments for now, please wait)
 - Updated: .gitignore
@@ -81,7 +76,7 @@ Source:
 - Updated: readme.txt (Changelog)
 - Updated: functions.php (Comments and Organization)
 - Updated: README.md (for theme users, for Theme Devs & browser support)
-- Updated: style.css (Theme URI, Version, Tested up to & TABLE OF CONTENTS)
+- Updated: style.css (Theme URI, Version & Tested up to)
 
 = 1.2.0 - December 12 2022 =
 - Revision: sass directory (files .scss)

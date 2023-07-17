@@ -1,14 +1,15 @@
 @charset "UTF-8";
 /*!
 Theme Name: Really Simple
+Theme URI: https://github.com/flaubert-dev/really-simple-theme#really-simple-theme
 Author: Flaubert Henriques
 Author URI: https://profiles.wordpress.org/flauberthenriques/
 Description: Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.
-Version: 1.2.0
+Version: 1.3.0
 Requires at least: WordPress 5.3
-Tested up to: WordPress 6.1
+Tested up to: WordPress 6.2
 Requires PHP: 7.0
-License: GNU General Public License v2 or later
+License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: really-simple
 Tags: custom-logo, custom-menu, featured-images, right-sidebar, sticky-post, translation-ready, blog 
@@ -17,7 +18,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 Really Simple is based on Underscores http://underscores.me/, (C) 2012-2021 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+Underscores is distributed under the terms of the GNU GPL v3 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
@@ -40,7 +41,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	- Posts and pages
 	- Forms
 	- Widgets
-	- Footer
 	- Comments
 	- Media
 	- Captions
@@ -1327,32 +1327,6 @@ textarea {
   width: 100%;
 }
 
-/* Footer
---------------------------------------------- */
-.site-footer {
-  background: #fff;
-  border-top: 1px solid rgba(38, 50, 56, 0.1);
-  border-bottom: 1px solid rgba(38, 50, 56, 0.1);
-}
-
-.site-info {
-  font-size: 0.8125rem;
-  color: #586674;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.site-info a {
-  color: #586674;
-}
-
-.site-info a:hover,
-.site-info a:focus {
-  color: #191970;
-}
-
 /* Comments
 --------------------------------------------- */
 .comments-area {
@@ -1899,6 +1873,27 @@ textarea {
   .wp-block-gallery .blocks-gallery-grid .blocks-gallery-item {
     width: 100%;
   }
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(38, 50, 56, 0.1);
+  border-bottom: 1px solid rgba(38, 50, 56, 0.1);
+  font-family: arial, ubuntu, roboto, noto, -apple-system, helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: #586674;
+  padding: 1.25rem;
+}
+
+.footer small {
+  font-size: 0.875rem;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /*--------------------------------------------------------------

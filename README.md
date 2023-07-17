@@ -24,6 +24,9 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 **Is Really Simple Theme compatible with AMP?**
 - Yes. Really Simple Theme is 100% AMP compatible.
 
+**When will this theme fully support multiple devices including Tablets?**
+- This theme was developed by me and has no company involved or sponsoring it, it might take a little more time. However, the goal is to update gradually and add support for various devices including the Tablet.
+
 ## For Theme Users
 
 ![Go to Customize](./img-for-readme/appearance-customize.png)

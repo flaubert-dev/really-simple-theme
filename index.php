@@ -12,43 +12,63 @@
  * @package Really Simple
  */
 
-get_header(); ?>
+?>
 
-      <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() && is_home() && !is_paged() ) : ?>
-        <h1 style="display:none;">
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+
+<head>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
+
+  <header class="container header">
+    <?php get_template_part( 'template-parts/content', 'header' ); ?>
+  </header>
+
+  <main class="container main">
+    <?php if( is_home() ) : ?>
+      <?php if( get_bloginfo( 'description' ) ) : ?>
+        <h1>
           <?php echo esc_html( get_bloginfo( 'description' ) ); ?>
         </h1>
-      <?php endif; ?><!-- title for blog and home pages -->
+      <?php endif; ?>
+    <?php endif; ?>
 
-      <?php
-      if ( have_posts() ) :
-      
-        // Start the Loop
-        while ( have_posts() ) : the_post();
-          
-          // Content
-          get_template_part( 'template-parts/content' );
+    <?php
+      if( is_home() ) { // home
+        get_template_part( 'template-parts/content' );
+      } else if( is_page() ) { // page
+        get_template_part( 'template-parts/content', 'page' );
+      } else if( is_single() ) { // single
+        get_template_part( 'template-parts/content', 'single' );
+      } else if( is_archive() ) { // archive
+        get_template_part( 'template-parts/content', 'archive' );
+      } else if( is_search() ) { // search
+        get_template_part( 'template-parts/content', 'search' );
+      } else if( is_404() ) { // 404
+        get_template_part( 'template-parts/content', 'error' );
+      }
+    ?>
 
-        endwhile; 
+    <!-- Sidebar -->
+    <aside class="aside">
+      <?php get_template_part( 'template-parts/content', 'aside' ); ?>
+    </aside>
+  </main>
 
-        // Pagination
-        the_posts_navigation();
+  <footer class="footer">
+    <?php get_template_part( 'template-parts/content', 'footer' ); ?>
+  </footer>
 
-      else:
-
-        // No content
-        get_template_part( 'template-parts/content', 'none' );
-
-      endif;  
-      ?>
-    
-    </main><!-- #main -->
-
-    <aside class="widget-area">
-      <?php get_sidebar(); ?>
-    </aside><!-- .widget-area -->
-
-  </div><!-- #primary -->
-
-<?php
-get_footer();
+  <?php wp_footer(); ?>
+</body>
+</html>

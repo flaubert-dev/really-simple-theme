@@ -30,39 +30,43 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header class="container header">
-    <?php get_template_part( 'template-parts/content', 'header' ); ?>
+  <header class="header">
+    <div class="container">
+      <?php get_template_part( 'template-parts/content', 'header' ); ?>
+    </div>
   </header>
 
-  <main class="container main">
-    <?php if( is_home() ) : ?>
-      <?php if( get_bloginfo( 'description' ) ) : ?>
-        <h1>
-          <?php echo esc_html( get_bloginfo( 'description' ) ); ?>
-        </h1>
+  <main class="main">
+    <div class="container">
+      <?php if( is_home() ) : ?>
+        <?php if( get_bloginfo( 'description' ) ) : ?>
+          <h1>
+            <?php echo esc_html( get_bloginfo( 'description' ) ); ?>
+          </h1>
+        <?php endif; ?>
       <?php endif; ?>
-    <?php endif; ?>
 
-    <?php
-      if( is_home() ) { // home
-        get_template_part( 'template-parts/content' );
-      } else if( is_page() ) { // page
-        get_template_part( 'template-parts/content', 'page' );
-      } else if( is_single() ) { // single
-        get_template_part( 'template-parts/content', 'single' );
-      } else if( is_archive() ) { // archive
-        get_template_part( 'template-parts/content', 'archive' );
-      } else if( is_search() ) { // search
-        get_template_part( 'template-parts/content', 'search' );
-      } else if( is_404() ) { // 404
-        get_template_part( 'template-parts/content', 'error' );
-      }
-    ?>
+      <?php
+        if( is_home() ) { // home
+          get_template_part( 'template-parts/content' );
+        } else if( is_page() ) { // page
+          get_template_part( 'template-parts/content', 'page' );
+        } else if( is_single() ) { // single
+          get_template_part( 'template-parts/content', 'single' );
+        } else if( is_archive() ) { // archive
+          get_template_part( 'template-parts/content', 'archive' );
+        } else if( is_search() ) { // search
+          get_template_part( 'template-parts/content', 'search' );
+        } else if( is_404() ) { // 404
+          get_template_part( 'template-parts/content', 'error' );
+        }
+      ?>
 
-    <!-- Sidebar -->
-    <aside class="aside">
-      <?php get_template_part( 'template-parts/content', 'aside' ); ?>
-    </aside>
+      <!-- Sidebar -->
+      <aside class="aside">
+        <?php get_template_part( 'template-parts/content', 'aside' ); ?>
+      </aside>
+    </div>
   </main>
 
   <footer class="footer">

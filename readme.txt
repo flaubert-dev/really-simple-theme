@@ -137,3 +137,7 @@ Source:
 
 = 1.0 - July 25 2021 =
 - Initial release
+
+== Credits ==
+
+* Heroicons SVGs https://heroicons.com/

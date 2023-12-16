@@ -1,4 +1,26 @@
-/**
- * Theme SCSS progress with news coming soon \o/
- * Comment for now, please wait
+/** 
+  * BUTTONS
 **/
+
+.btn {
+  color: $hex-0f1;
+  padding: 5px;
+  transition: all 300ms;
+}
+
+.btn:hover {
+  background-color: $hex-f5f;
+  text-decoration: none;
+}
+
+.btn--navOpen {
+  border: 3px solid $hex-263-RGBA;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.btn--navOpen svg {
+  width: 15px;
+}

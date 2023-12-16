@@ -1,0 +1,19 @@
+/** 
+  * FOOTER
+**/
+
+footer {
+  border-top: 1px solid $hex-263-RGBA;
+  color: $hex-586;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  padding: 20px 0;
+}
+
+.footer__flex:first-child {
+  text-transform: capitalize;
+}

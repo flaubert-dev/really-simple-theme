@@ -11,32 +11,35 @@
 
 ?>
 
-  <footer class="footer">
-    <div class="container">
-      <small class="footer__copy">
-        &copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
-      </small>
+<footer class="footer" class="container footer">
+  <div class="footer__flex">
+    <small class="footer__flex-item">
+      &copy; 
+      
+      <?php echo date( 'Y' ); ?> 
+      
+      <?php bloginfo( 'name' ); ?>
+    </small>
 
-      <section class="footer__info">
-        &nbsp;<span>/</span>
+    <span class="footer__flex-item">
+      &minus; 
+      
+      <a 
+      href="<?php echo esc_url( 'https://wordpress.org/themes/really-simple/', 'really-simple' ); ?>" target="_blank" 
+      rel="noreferrer noopener"><?php esc_html_e( 'Really Simple', 'really-simple' ); ?></a> 
+      
+      <span>/</span>
 
-        <span class="footer__info-text">
-          <?php esc_html_e( 'Theme:', 'really-simple' ); ?>
-        </span>
-        
-        <a class="footer__info-link" href="<?php echo esc_url( 'https://wordpress.org/themes/really-simple/', 'really-simple' ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Really Simple', 'really-simple' ); ?></a>&nbsp;<span>/</span>
+      <a 
+      href="<?php echo esc_url( 'https://www.gnu.org/licenses/gpl-3.0.html', 'really-simple' ); ?>" target="_blank" 
+      rel="noreferrer noopener">
+        <?php esc_html_e( 'GPLv3', 'really-simple' ); ?>
+      </a>
+    </span>
+  </div>
+</footer>
 
-        <span class="footer__info-text">
-          <?php esc_html_e( 'License:', 'really-simple' ); ?>
-        </span>
+<?php wp_footer(); ?>
 
-        <a class="footer__info-link" href="<?php echo esc_url( 'https://www.gnu.org/licenses/gpl-3.0.html', 'really-simple' ); ?>" target="_blank" rel="noreferrer noopener">
-          <?php esc_html_e( 'GPLv3', 'really-simple' ); ?>
-        </a>
-      </section>
-    </div>
-  </footer>
-
-  <?php wp_footer(); ?>
 </body>
 </html>

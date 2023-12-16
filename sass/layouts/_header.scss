@@ -1,8 +1,23 @@
 /** 
   * HEADER
+  ** breakpoints: SM (mobile), MD (tablet), LG (laptop), XL (desktop)
 **/
 
 .header {
   background-color: $hex-fff;
   border-bottom: 2px solid $hex-263-RGBA;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header > .container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  color: $hex-0f1;
+  font-size: $px-26;
+  text-transform: capitalize;
 }

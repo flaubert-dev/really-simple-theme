@@ -70,7 +70,9 @@
   </main>
 
   <footer class="footer">
-    <?php get_template_part( 'template-parts/content', 'footer' ); ?>
+    <div class="container">
+      <?php get_template_part( 'template-parts/content', 'footer' ); ?>
+    </div>
   </footer>
 
   <?php wp_footer(); ?>

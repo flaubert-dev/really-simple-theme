@@ -10,33 +10,29 @@
 
 ?>
 
-<div class="header__flex">
-  <?php if( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
-    <?php the_custom_logo(); ?>
-  
-  <?php else : ?>
-    <h1 class="header__title">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-  <?php endif; ?>
+<?php if( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
+  <?php the_custom_logo(); ?>
 
-  <nav class="header__flex-item">
-    <a href="#" role="button">
-      &times; <?php esc_html_e( 'Close Menu', 'really-simple' ); ?>
-    </a>
-
-    <?php
-      wp_nav_menu([
-        'theme_location'  => 'really-simple-primary-menu', 
-        'container'       => '',
-        'menu_class'      => 'really-first-menu'
-      ]);
-    ?>
-  </nav>
-
-  <a href="#header-menu" class="header__flex-item" role="button">
-    <?php esc_html_e( 'Open Menu', 'really-simple' ); ?>
+<?php else : ?>
+  <a class="header__title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+    <?php bloginfo( 'name' ); ?>
   </a>
-</div>
+<?php endif; ?>
+
+<nav class="header__nav">
+  <a href="#" class="btn btn--navClose" role="button">
+    &times; <?php esc_html_e( 'Close Menu', 'really-simple' ); ?>
+  </a>
+
+  <?php
+    wp_nav_menu([
+      'theme_location'  => 'really-simple-primary-menu', 
+      'container'       => '',
+      'menu_class'      => 'really-first-menu'
+    ]);
+  ?>
+</nav>
+
+<a href="#header-menu" class="btn btn--navOpen" role="button">
+  <?php esc_html_e( 'Open Menu', 'really-simple' ); ?>
+</a>

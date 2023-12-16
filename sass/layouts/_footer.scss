@@ -8,13 +8,13 @@
   color: $hex-586;
 }
 
-.footer__flex {
-  display: flex;
-  justify-content: center;
+.footer > .container {
+  flex-direction: row;
   column-gap: 5px;
+  justify-content: center;
   padding: 20px 0;
 }
 
-.footer__flex:first-child {
+.footer__copy {
   text-transform: capitalize;
 }

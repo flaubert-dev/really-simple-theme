@@ -5,7 +5,6 @@
   ** container: grid (@supports)
 **/
 
-/* container: flex (breakpoints: SM / MD / LG) */
 .container {
   display: flex;
   flex-direction: column;
@@ -15,22 +14,10 @@
   margin-right: 20px;
 }
 
-/* container: flex (breakpoint: XL) */
+/* XL */
 @media (min-width: 1200px) {
   .container {
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-/* container: grid (@supports) */
-@supports (display: grid) {
-  .container {
-    display: grid;
-    grid-template-columns: [content-start] minmax(200px, 1200px) [content-end];
-  }
-
-  .container > * {
-    grid-column: content;
   }
 }

@@ -1,9 +1,9 @@
 === Really Simple ===
 Requires at least: WordPress 5.3
-Tested up to: WordPress 6.2
+Tested up to: WordPress 6.4
 Requires PHP: 7.0
-Version: 1.3.0
-Stable tag: 1.3.0
+Version: 2.0.0
+Stable tag: 2.0.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,6 +65,11 @@ Source:
 - https://stocksnap.io/photo/woman-working-9YZ9JQIHRH
 
 == Changelog ==
+
+= 2.0.0 - December 17 2023 =
+- 
+- 
+- 
 
 = 1.3.0 - July 17 2023 =
 - New: Footer (Date, Website title, Theme URL & Licence URL)
@@ -132,8 +137,3 @@ Source:
 
 = 1.0 - July 25 2021 =
 - Initial release
-
-== Credits ==
-
-* Based on Underscores https://underscores.me/, (C) 2012-2021 Automattic, Inc., [GPLv3 or later](https://www.gnu.org/licenses/gpl-3.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2021 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)

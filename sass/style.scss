@@ -4,9 +4,9 @@ Theme URI: https://github.com/flaubert-dev/really-simple-theme#really-simple-the
 Author: Flaubert Henriques
 Author URI: https://profiles.wordpress.org/flauberthenriques/
 Description: Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.
-Version: 1.3.0
+Version: 2.0.0
 Requires at least: WordPress 5.3
-Tested up to: WordPress 6.2
+Tested up to: WordPress 6.4
 Requires PHP: 7.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -15,53 +15,25 @@ Tags: custom-logo, custom-menu, featured-images, right-sidebar, sticky-post, tra
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
-Really Simple is based on Underscores http://underscores.me/, (C) 2012-2021 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v3 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Reset CSS
-	- Normalize
-  - Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-	- Container
-# Components
-	- Navigation
-	- Main
-	- Posts and pages
-	- Forms
-	- Widgets
-	- Comments
-	- Media
-	- Captions
-	- Galleries
-# Utilities
-	- Accessibility
-	- Alignments
-# Responsive (media-queries)
-	- Tablet
-	- Mobile
+/*! --------------------------------------------------------------*/
 
---------------------------------------------------------------*/
+@import "./base/1_functions";
+@import "./base/2_variables";
+@import "./base/3_reset";
+@import "./base/4_container";
+@import "./base/5_alignments";
+@import "./base/6_accessibility";
 
-@import "./_0_base/functions";
-@import "./_1_base/1_font-family";
-@import "./_1_base/2_font-size-function";
-@import "./_1_base/3_font-size-mixin";
-@import "./_1_base/4_colors";
-@import "./_1_base/5_reset";
-@import "./_1_base/6_base";
-@import "./_2_components/1_components";
-@import "./_2_components/2_responsive";
-@import "./_2_layouts/footer";
-@import "./_3_utilities/utilities";
+@import "./components/btns";
+@import "./components/cards";
+@import "./components/forms";
+
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/main";
+
+@import "./pages/pageArchive";
+@import "./pages/pageHome";
+@import "./pages/pageSingle";

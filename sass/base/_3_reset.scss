@@ -1,0 +1,24 @@
+/** 
+  * RESET CSS
+**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: $px-16;
+  font-family: $helvetica;
+  line-height: $px-24;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+pre {
+  font-family: $courier;
+}

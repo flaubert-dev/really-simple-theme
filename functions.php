@@ -134,7 +134,13 @@ function really_simple_nav_menus() {
 function really_simple_style() {
 
   // Theme's main stylesheet
-  wp_enqueue_style( 'really-simple-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ), false );
+  wp_enqueue_style( 
+    'really-simple-css', 
+    get_stylesheet_directory_uri() . '/style.min.css', 
+    array(), 
+    wp_get_theme()['Version'], 
+    false 
+  );
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) { 
     wp_enqueue_script( 'comment-reply' ); 

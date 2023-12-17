@@ -61,9 +61,11 @@
       ?>
 
       <!-- Sidebar -->
-      <aside class="aside">
-        <?php get_template_part( 'template-parts/content', 'aside' ); ?>
-      </aside>
+      <?php if( !is_page() ) : ?>
+        <aside class="aside">
+          <?php get_template_part( 'template-parts/content', 'aside' ); ?>
+        </aside>
+      <?php endif; ?>
     </div>
   </main>
 

@@ -22,8 +22,6 @@
   
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <?php wp_head(); ?>
 </head>
 

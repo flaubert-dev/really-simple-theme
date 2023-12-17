@@ -13,6 +13,7 @@
   text-decoration: none;
 }
 
+/* .btn--navOpen */
 .btn--navOpen {
   border: 3px solid $hex-263-RGBA;
   border-radius: 3px;
@@ -23,4 +24,29 @@
 
 .btn--navOpen svg {
   width: 15px;
+}
+
+/* .btn--navClose */
+.btn--navClose {
+  background-color: $hex-263;
+  color: $hex-fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  font-size: $px-18;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0;
+  transition: all 300ms;
+}
+
+.btn--navClose:active,
+.btn--navClose:hover {
+  background-color: $hex-586;
+  color: $hex-fff;
+}
+
+.btn--navClose svg {
+  width: 18px;
 }

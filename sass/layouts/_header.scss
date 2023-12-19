@@ -101,6 +101,8 @@
     flex-direction: column;
     align-items: center;
     row-gap: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .header__nav {
@@ -111,14 +113,14 @@
     pointer-events: initial;
   }
 
-  .header__nav .really-first-menu {
+  .really-first-menu {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 5px;
   }
 
-  .header__nav .really-first-menu .menu-item a {
+  .really-first-menu .menu-item a {
     color: $hex-0f1;
     display: block;
     border-radius: 3px;
@@ -126,17 +128,17 @@
     transition: all 300ms;
   }
 
-  .header__nav .really-first-menu .menu-item a:hover {
+  .really-first-menu .menu-item a:hover {
     background-color: $hex-0f1;
     color: $hex-fff;
     text-decoration: none;
   }
 
-  .header__nav .really-first-menu .menu-item-has-children {
+  .really-first-menu .menu-item-has-children {
     position: relative;
   }
 
-  .header__nav .really-first-menu .menu-item-has-children::after {
+  .really-first-menu .menu-item-has-children::after {
     content: "›";
     color: $hex-0f1;
     display: inline-block;
@@ -147,15 +149,49 @@
     transform: rotate(90deg);
   }
 
-  .header__nav .really-first-menu .menu-item-has-children a ~ .sub-menu {
+  .really-first-menu .menu-item-has-children .sub-menu {
+    box-shadow: 0px 1px 20px 5px $hex-263-RGBA;
     position: absolute;
-    left: -10px;
+    left: -30px;
     list-style: none;
+    opacity: 0;
     pointer-events: none;
+    transform: translateY(30px);
+    transition: all 300ms;
+    z-index: -100;
+  }
+
+  .really-first-menu .menu-item:hover > .sub-menu,
+  .really-first-menu .menu-item:focus-within > .sub-menu,
+  .really-first-menu .menu-item .sub-menu:hover,
+  .really-first-menu .menu-item .sub-menu:focus {
+    opacity: 1;
+    pointer-events: initial;
+    transform: translateY(0);
     z-index: 100;
   }
 
-  .header__nav .really-first-menu .menu-item-has-children a ~ .sub-menu .menu-item {
+  .really-first-menu .menu-item-has-children .sub-menu .menu-item {
     min-width: max-content;
+  }
+
+  .really-first-menu .menu-item-has-children .sub-menu .menu-item::after {
+    bottom: 0;
+    right: 10px;
+  }
+
+  .really-first-menu .menu-item-has-children .sub-menu .menu-item + .menu-item {
+    border-top: 1px solid $hex-586;
+  }
+
+  .really-first-menu .menu-item-has-children .sub-menu .menu-item a {
+    background-color: $hex-fff;
+    border-radius: 0;
+    min-width: 120px;
+  }
+
+  .really-first-menu .menu-item-has-children .sub-menu .menu-item a:hover {
+    background-color: $hex-0f1;
+    color: $hex-fff;
   }
 }

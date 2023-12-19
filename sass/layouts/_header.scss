@@ -97,6 +97,12 @@
 
 /* MD */
 @media (min-width: 768px) {
+  .header > .container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+  }
+
   .header__nav {
     background-color: transparent;
     color: $hex-0f1;
@@ -107,5 +113,49 @@
 
   .header__nav .really-first-menu {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 5px;
+  }
+
+  .header__nav .really-first-menu .menu-item a {
+    color: $hex-0f1;
+    display: block;
+    border-radius: 3px;
+    padding: 5px 10px;
+    transition: all 300ms;
+  }
+
+  .header__nav .really-first-menu .menu-item a:hover {
+    background-color: $hex-0f1;
+    color: $hex-fff;
+    text-decoration: none;
+  }
+
+  .header__nav .really-first-menu .menu-item-has-children {
+    position: relative;
+  }
+
+  .header__nav .really-first-menu .menu-item-has-children::after {
+    content: "›";
+    color: $hex-0f1;
+    display: inline-block;
+    font-size: $px-14;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  .header__nav .really-first-menu .menu-item-has-children a ~ .sub-menu {
+    position: absolute;
+    left: -10px;
+    list-style: none;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .header__nav .really-first-menu .menu-item-has-children a ~ .sub-menu .menu-item {
+    min-width: max-content;
   }
 }

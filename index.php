@@ -22,6 +22,10 @@
   
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
 
+  <!-- Only Tests SEO: https://deluxeblogtips.com/get-current-page-title/ -->
+  <meta name="description" content="<?php wp_title(); ?>">
+  <!-- Only Tests SEO: https://deluxeblogtips.com/get-current-page-title/ -->
+
   <?php wp_head(); ?>
 </head>
 

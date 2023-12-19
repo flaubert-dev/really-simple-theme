@@ -12,14 +12,20 @@
 }
 
 .header > .container {
+  column-gap: 20px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+.header .custom-logo-link {
+  max-width: 250px;
+}
+
 .header__title {
   color: $hex-0f1;
   font-size: $px-24;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -99,10 +105,13 @@
 @media (min-width: 768px) {
   .header > .container {
     flex-direction: column;
-    align-items: center;
     row-gap: 12px;
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .header__title {
+    font-size: $px-26;
   }
 
   .header__nav {
@@ -193,5 +202,19 @@
   .really-first-menu .menu-item-has-children .sub-menu .menu-item a:hover {
     background-color: $hex-0f1;
     color: $hex-fff;
+  }
+}
+
+/* XL */
+@media (min-width: 1200px) {
+  .header > .container {
+    column-gap: 40px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .really-first-menu {
+    column-gap: 5px;
   }
 }

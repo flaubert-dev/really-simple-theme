@@ -42,7 +42,7 @@
   list-style: none;
 }
 
-/* menu mobile */
+/* menu mobile: SM */
 .header__nav:target,
 .admin-bar .header__nav:target {
   top: 46px;
@@ -93,4 +93,19 @@
 
 .header__nav:target .page_item_has_children .children {
   display: none;
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .header__nav {
+    background-color: transparent;
+    color: $hex-0f1;
+    opacity: 1;
+    position: static;
+    pointer-events: initial;
+  }
+
+  .header__nav .really-first-menu {
+    display: flex;
+  }
 }

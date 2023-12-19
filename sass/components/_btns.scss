@@ -50,3 +50,11 @@
 .btn--navClose svg {
   width: 18px;
 }
+
+/* MD */
+@media (min-width: 768px) {
+  .btn--navOpen,
+  .btn--navClose {
+    display: none;
+  }
+}

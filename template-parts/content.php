@@ -10,44 +10,46 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( [ 'post-card' ] ); ?>>
-  
-  <?php if ( has_post_thumbnail() ): ?>
-    <a class="card-media" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" aria-hidden="true" tabindex="-1">
-      <?php the_post_thumbnail( 'really-simple-thumb', [ 'class' => 'really-thumb' ] ); ?>
-    </a>
-  <?php endif; ?><!-- .card-media --> 
+<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+  <article <?php post_class( [ 'card-post' ] ); ?>>
+    <header>
+      <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?>
+    </header>
 
-  <div class="card-body">
-    
-    <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?><!-- date/time -->
+    <section>
+      <a href="<?php the_permalink(); ?>">
+        <?php if( has_post_thumbnail() ): ?>
+          <?php the_post_thumbnail( 'really-simple-thumb', [ 'class' => 'card-thumb' ] ); ?>
+        <?php endif; ?>
+      </a>
 
-    <header class="entry-header">
-      <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
-    </header><!-- .entry-header --> 
+      <div>
+        <?php the_title( 
+          '<h2 class="card-title">
+            <a href="' . esc_url( get_permalink() ) . '">', '</a>
+          </h2>'); 
+        ?>
 
-    <div class="entry-meta">
-      <?php 
-        if ( has_category() ) {
-          the_category( ', ' );
-        }
-      ?>
-    </div><!-- .entry-meta -->
+        <?php if( has_category() ) { the_category( ', ' ); } ?>
 
-    <div class="entry-content">
-      <?php
-        if( has_excerpt() ) {
-          the_excerpt();
-        } elseif ( strpos( $post->post_content, '<!--more-->' ) ) {
-          the_content( 'Read more' );
-        } else {
-          the_excerpt();
-        }
-      ?>
-    </div><!-- .entry-content --> 
+        <?php
+          if( has_excerpt() ) {
+            the_excerpt();
+          } elseif( strpos( $post->post_content, '<!--more-->' ) ) {
+            the_content( 'Read more' );
+          } else {
+            the_excerpt();
+          }
+        ?>
+      </div>
+    </section>
 
-    <?php the_author_posts_link(); ?><!-- author -->
-
-  </div><!-- .card-body --> 
-
-</article><!-- #post-<?php the_ID(); ?> -->
+    <footer>
+      <?php the_author_posts_link(); ?>
+    </footer>
+  </article>
+<?php endwhile; ?>
+  <?php the_posts_navigation(); ?>
+<?php else: ?>
+  <?php get_template_part( 'template-parts/content', 'none' ); ?>
+<?php endif; ?>

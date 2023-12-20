@@ -22,10 +22,6 @@
   
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
 
-  <!-- Only Tests SEO: https://deluxeblogtips.com/get-current-page-title/ -->
-  <meta name="description" content="<?php wp_title(); ?>">
-  <!-- Only Tests SEO: https://deluxeblogtips.com/get-current-page-title/ -->
-
   <?php wp_head(); ?>
 </head>
 
@@ -51,15 +47,17 @@
       <?php
         if( is_home() ) { // home
           get_template_part( 'template-parts/content' );
-        } else if( is_page() ) { // page
+        } elseif( is_page() ) { // page
           get_template_part( 'template-parts/content', 'page' );
-        } else if( is_single() ) { // single
+        } elseif( is_paged() ) { // paged
+          get_template_part( 'template-parts/content', 'paged' );
+        } elseif( is_single() ) { // single
           get_template_part( 'template-parts/content', 'single' );
-        } else if( is_archive() ) { // archive
+        } elseif( is_archive() ) { // archive
           get_template_part( 'template-parts/content', 'archive' );
-        } else if( is_search() ) { // search
+        } elseif( is_search() ) { // search
           get_template_part( 'template-parts/content', 'search' );
-        } else if( is_404() ) { // 404
+        } elseif( is_404() ) { // 404
           get_template_part( 'template-parts/content', 'error' );
         }
       ?>

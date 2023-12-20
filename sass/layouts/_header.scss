@@ -19,6 +19,7 @@
 }
 
 .header .custom-logo-link {
+  line-height: 0;
   max-width: 250px;
 }
 
@@ -104,10 +105,8 @@
 /* MD */
 @media (min-width: 768px) {
   .header > .container {
-    flex-direction: column;
-    row-gap: 12px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   .header__title {
@@ -208,8 +207,7 @@
 /* XL */
 @media (min-width: 1200px) {
   .header > .container {
-    column-gap: 40px;
-    flex-direction: row;
+    column-gap: 30px;
     margin-left: auto;
     margin-right: auto;
   }

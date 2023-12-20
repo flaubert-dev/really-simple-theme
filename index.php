@@ -62,8 +62,8 @@
         }
       ?>
 
-      <!-- Sidebar -->
-      <?php if( !is_page() ) : ?>
+      <?php if( !is_page() && is_active_sidebar( 'really-simple-sidebar-1' ) ) : ?>
+        <!-- Sidebar -->
         <aside class="aside">
           <?php get_template_part( 'template-parts/content', 'aside' ); ?>
         </aside>

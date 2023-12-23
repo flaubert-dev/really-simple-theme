@@ -9,7 +9,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.
+Really Simple is a theme for new bloggers and writers who need a faster site. This theme focuses on simplicity as much as possible, and loading speed using AMP. Yes, this theme is fully AMP compatible. Check out the file: readme.txt, which has good tips to avoid bugs when you update WordPress 5.8 and newer versions.
 
 == Installation ==
 
@@ -66,7 +66,7 @@ Source:
 
 == Changelog ==
 
-= 2.0.0 - December 17 2023 =
+= 2.0.0 - December 25 2023 =
 - 
 - 
 - 

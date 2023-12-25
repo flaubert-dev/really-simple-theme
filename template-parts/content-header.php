@@ -10,6 +10,11 @@
 
 ?>
 
+<!-- skip link -->
+<a class="screen-reader-text skip-link" href="#main">
+  <?php esc_html__( 'Skip to content', 'really-simple' ); ?>  
+</a>
+
 <?php if( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
   <?php the_custom_logo(); ?>
 

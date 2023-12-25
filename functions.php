@@ -44,19 +44,9 @@ function really_simple_admin() {
 } add_action( 'init', 'really_simple_admin' );
 
 /**
- * Execution of Skip link
-**/
-function really_simple_skip_link() {
-
-  // Skip link
-  echo '<a class="screen-reader-text skip-link" href="#main">' . esc_html__( 'Skip to content', 'really-simple' ) . '</a>';
-} add_action( 'wp_body_open', 'really_simple_skip_link', 5 );
-
-/**
  * Register the initial theme setup
 **/
 function really_simple_support() {
-
   /*
    * Make theme available for translation.
    * Translations can be filed in the /languages/ directory.
@@ -121,7 +111,6 @@ function really_simple_support() {
  * Register the navigation menus
 **/
 function really_simple_nav_menus() {
-  
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus([
     'really-simple-primary-menu' => esc_html__( 'Primary Menu', 'really-simple' ),
@@ -132,7 +121,6 @@ function really_simple_nav_menus() {
  * Register the theme assets
 **/
 function really_simple_style() {
-
   // Theme's main stylesheet
   wp_enqueue_style( 
     'really-simple-css', 
@@ -166,7 +154,6 @@ function really_simple_sidebar() {
  * Filter archive title
 **/
 function really_simple_category_title( $title ) {
-
   // Returns only the category name on the category page
   if( is_category() ) { 
     $title = single_cat_title( '', false ); 

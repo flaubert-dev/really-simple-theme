@@ -32,5 +32,5 @@
     </div>
   </header>
 
-  <main class="main"><!-- main -->
+  <main id="main" class="main"><!-- main -->
     <div class="container"><!-- container -->

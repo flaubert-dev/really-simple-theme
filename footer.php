@@ -10,3 +10,22 @@
  */
 
 ?>
+
+      <?php if( !is_page() && is_active_sidebar( 'really-simple-sidebar-1' ) ) : ?>
+        <!-- sidebar -->
+        <aside class="aside">
+          <?php get_template_part( 'template-parts/content', 'aside' ); ?>
+        </aside>
+      <?php endif; ?>
+    </div><!-- container -->
+  </main><!-- main -->
+
+  <footer class="footer">
+    <div class="container">
+      <?php get_template_part( 'template-parts/content', 'footer' ); ?>
+    </div>
+  </footer>
+
+  <?php wp_footer(); ?>
+</body>
+</html>

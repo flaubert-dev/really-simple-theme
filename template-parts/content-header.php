@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying header content in index.php
+ * Template part for displaying header content in header.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying footer content in index.php
+ * Template part for displaying footer content in footer.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

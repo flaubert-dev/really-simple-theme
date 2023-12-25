@@ -7,6 +7,6 @@
  * @package Really Simple
  */
 
-  if ( is_active_sidebar( 'really-simple-sidebar-1' ) ) {
-    dynamic_sidebar( 'really-simple-sidebar-1' );
-  }
+if( is_active_sidebar( 'really-simple-sidebar-1' ) ) {
+  dynamic_sidebar( 'really-simple-sidebar-1' );
+}

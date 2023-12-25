@@ -36,7 +36,7 @@
 
   <main class="main">
     <div class="container">
-      <?php if( is_home() ) : ?>
+      <?php if( is_home() && !is_paged() ) : ?>
         <?php if( get_bloginfo( 'description' ) ) : ?>
           <h1>
             <?php echo esc_html( get_bloginfo( 'description' ) ); ?>

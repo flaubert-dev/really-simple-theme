@@ -10,50 +10,60 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  
-  <header class="entry-header">
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?><!-- .entry-title -->
-    <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?>
-    <span>
-      <?php esc_html_e( 'Author: ', 'really-simple' ); ?> <?php the_author_posts_link(); ?>
-    </span>
-  </header><!-- .entry-header -->
+<?php while( have_posts() ) : the_post(); ?>
+  <article <?php post_class( [ 'card-single' ] ); ?>>
+    <?php the_title( '<h1>', '</h1>' ); ?>
 
-  <div class="entry-body">
+    <section>
+      <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?>
 
-    <?php if ( has_post_thumbnail() ): ?>
-      <div class="entry-media" aria-hidden="true" tabindex="-1">
-        <?php the_post_thumbnail( 'full', [ 'class' => 'really-single-thumb' ] ); ?>
+      <span class="card-single__author">
+        <?php esc_html_e( 'Author: ', 'really-simple' ); ?> <?php the_author_posts_link(); ?>
+      </span>
+    </section>
+
+    <section>
+      <?php if( has_post_thumbnail() ): ?>
+        <?php the_post_thumbnail( 'full', [ 'class' => 'card-thumb' ] ); ?>
+      <?php endif; ?>
+
+      <div class="card-single__content">
+        <?php
+          the_content();
+
+          wp_link_pages([
+            'before' => '<div class="card-links">' . esc_html__( 'Pages:', 'really-simple' ),
+            'after'  => '</div>',
+          ]);
+        ?>
       </div>
-    <?php endif; ?><!-- .entry-media -->
 
-    <div class="entry-content">
-      <?php
-        the_content();
-
-        wp_link_pages([
-          'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'really-simple' ),
-          'after'  => '</div>',
-        ]);
-      ?>
-    </div><!-- .entry-content -->
-
-    <div class="entry-meta">
-
-      <div class="entry-category-content">
-        <span><?php esc_html_e( 'Categories:', 'really-simple' ); ?></span>
+      <div class="card-single__categories">
+        <span>
+          <?php esc_html_e( 'Categories:', 'really-simple' ); ?>
+        </span>
+        
         <?php the_category( ', ' ); ?>
-      </div><!-- .category-title -->
-      
+      </div>
+        
       <?php if( has_tag() ): ?>
-        <div class="entry-tags-content">
+        <div class="card-single__tags">
           <?php the_tags( 'Tags: ', ', ' ); ?>
         </div>
-      <?php endif; ?><!-- .tags-title -->
+      <?php endif; ?>
+    </section>
+  </article>
 
-    </div><!-- .entry-meta -->
+<?php  
+	// Pagination
+	the_post_navigation([
+		'prev_text' => '<span class="card-single__navSubtitle">' . esc_html__( 'Previous:', 'really-simple' ) . '</span> <span class="card-single__navTitle">%title</span>',
+		'next_text' => '<span class="card-single__navSubtitle">' . esc_html__( 'Next:', 'really-simple' ) . '</span> <span class="card-single__navTitle">%title</span>',
+	]);
 
-  </div><!-- .entry-body -->
-  
-</article><!-- #post-<?php the_ID(); ?> -->  
+	// If comments are open or we have at least one comment, load up the comment template.
+	if ( comments_open() || get_comments_number() ) :
+		comments_template();
+	endif;
+
+endwhile; // End of the loop.

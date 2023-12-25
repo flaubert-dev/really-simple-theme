@@ -49,7 +49,9 @@
     </footer>
   </article>
 <?php endwhile; ?>
-  <?php the_posts_navigation(); ?>
+  <?php if( the_posts_navigation() ) : ?>
+    <?php the_posts_navigation(); ?>
+  <?php endif; ?>
 <?php else: ?>
   <?php get_template_part( 'template-parts/content', 'none' ); ?>
 <?php endif; ?>

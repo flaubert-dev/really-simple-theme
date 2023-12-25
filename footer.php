@@ -11,10 +11,15 @@
 
 ?>
 
-      <?php if( !is_page() && !is_404() && is_active_sidebar( 'really-simple-sidebar-1' ) ) : ?>
+      <?php 
+        if( !is_page() && !is_search() && !is_404() && is_active_sidebar( 'really-simple-sidebar-1' ) ) : ?>
         <!-- sidebar -->
         <aside class="aside">
-          <?php get_template_part( 'template-parts/content', 'aside' ); ?>
+          <?php 
+            if( is_active_sidebar( 'really-simple-sidebar-1' ) ) {
+              dynamic_sidebar( 'really-simple-sidebar-1' );
+            }
+          ?>
         </aside>
       <?php endif; ?>
     </div><!-- container -->

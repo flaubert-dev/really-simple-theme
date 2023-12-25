@@ -8,6 +8,19 @@
  * @subpackage template-parts
  */
 
- // If no content, display the following message
- echo '<p>' . esc_html_e( 'There are no posts yet. Post something interesting.', 'really-simple' ) . '</p>';
- 
+?>
+
+<?php if( !is_search() ) : ?>
+  <?php echo '<p>' . esc_html_e( 'There are no posts yet. Post something interesting.', 'really-simple' ) . '</p>'; ?>
+<?php else: ?>
+  <?php echo '<p>' . esc_html__( 'No results were found, try searching for another word.', 'really-simple' ) . '</p>'; ?>
+
+  <?php 
+    get_search_form();
+
+    the_widget( 'WP_Widget_Recent_Posts', [
+      'title'   => esc_html__( 'Latest Posts', 'really-simple' ), 
+      'number'  => 10
+    ]); 
+  ?>
+<?php endif; ?>

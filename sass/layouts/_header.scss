@@ -1,7 +1,6 @@
 /** 
   * HEADER
-  ** breakpoints: SM (mobile), MD (tablet), LG (laptop), XL (desktop)
-  ** menu mobile
+  ** breakpoints: LG (laptop)
 **/
 
 .header {
@@ -49,7 +48,7 @@
   list-style: none;
 }
 
-/* menu mobile: SM */
+/* SM (mobile) MENU */
 .header__nav:target,
 .admin-bar .header__nav:target {
   top: 46px;
@@ -102,7 +101,7 @@
   display: none;
 }
 
-/* MD */
+/* MD (tablet) */
 @media (min-width: 768px) {
   .header > .container {
     margin-left: 70px;
@@ -204,7 +203,7 @@
   }
 }
 
-/* XL */
+/* XL (desktop) */
 @media (min-width: 1200px) {
   .header > .container {
     column-gap: 30px;

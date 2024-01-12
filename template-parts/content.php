@@ -17,11 +17,11 @@
     </header>
 
     <section>
-      <a href="<?php the_permalink(); ?>">
-        <?php if( has_post_thumbnail() ): ?>
+      <?php if( has_post_thumbnail() ): ?>
+        <a href="<?php the_permalink(); ?>">
           <?php the_post_thumbnail( 'really-simple-thumb', [ 'class' => 'card-thumb' ] ); ?>
-        <?php endif; ?>
-      </a>
+        </a>
+      <?php endif; ?>
 
       <div>
         <?php the_title( 
@@ -43,10 +43,6 @@
         ?>
       </div>
     </section>
-
-    <footer>
-      <?php the_author_posts_link(); ?>
-    </footer>
   </article>
 <?php endwhile; ?>
   <?php if( the_posts_navigation() ) : ?>

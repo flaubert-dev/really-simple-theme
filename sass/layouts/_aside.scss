@@ -1,3 +1,16 @@
 /** 
   * ASIDE
 **/
+
+/* XL */
+@media (min-width: 1200px) {
+  .aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    max-width: 350px;
+  }
+}

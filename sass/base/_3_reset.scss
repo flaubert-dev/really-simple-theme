@@ -11,6 +11,7 @@
 }
 
 * {
+  color: $hex-0f1;
   font-size: $px-16;
   font-family: $helvetica;
   line-height: $px-24;
@@ -30,6 +31,10 @@ a {
 a:hover {
   color: $hex-191;
   text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+  word-wrap: break-word;
 }
 
 pre {

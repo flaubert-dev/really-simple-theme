@@ -6,3 +6,10 @@
   background-color: $hex-f5f;
   padding: 50px 0;
 }
+
+/* XL */
+@media (min-width: 1200px) {
+  .main > .container {
+    position: relative;
+  }
+}

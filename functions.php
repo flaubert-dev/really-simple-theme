@@ -159,3 +159,21 @@ function really_simple_category_title( $title ) {
     $title = single_cat_title( '', false ); 
   } return $title;
 } add_filter( 'get_the_archive_title', 'really_simple_category_title' );
+
+/**
+ * Filter excerpt length
+**/
+function really_simple_excerpt_length( $length ) {
+
+  // Return up to 30 words for any abstract
+  return 30;
+} add_filter( 'excerpt_length', 'really_simple_excerpt_length' );
+
+/**
+ * Filter excerpt more
+**/
+function really_simple_excerpt_more( $more ) {
+  
+  // Any abstract will have a sequence ...
+  return '...';
+} add_filter( 'excerpt_more', 'really_simple_excerpt_more' );

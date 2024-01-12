@@ -1,3 +1,106 @@
 /** 
   * CARDS
 **/
+
+.card-post {
+  background-color: $hex-fff;
+  border-radius: 5px;
+  padding: 20px;
+  padding-top: 35px;
+  position: relative;
+  transition: all 300ms;
+}
+
+/* XL */
+@media (min-width: 1200px) {
+  .card-post {
+    max-width: 800px;
+  }
+}
+
+.card-post + .card-post {
+  margin-top: 35px;
+}
+
+.card-post:hover {
+  box-shadow: 0 7px 30px 0 $hex-263-RGBA;
+}
+
+.card-post header,
+.card-post footer {
+  position: absolute;
+  right: 0;
+}
+
+.card-post header {
+  border-left: 1px solid $hex-263-RGBA;
+  border-bottom: 1px solid $hex-263-RGBA;
+  top: 0;
+  text-transform: lowercase;
+}
+
+.card-post header::first-letter {
+  text-transform: uppercase;
+}
+
+.card-post header time {
+  font-size: $px-12;
+  font-weight: 700;
+  padding: 3px 10px;
+}
+
+.card-post section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* XL */
+@media (min-width: 1200px) {
+  .card-post section {
+    column-gap: 20px;
+    row-gap: 0;
+    flex-direction: row;
+  }
+}
+
+.card-post section .card-title {
+  margin-bottom: 5px;
+  max-width: 600px;
+}
+
+.card-post section .card-title a {
+  color: $hex-0f1;
+  font-size: $px-20;
+}
+
+.card-post section > a img {
+  border-radius: 5px;
+  min-width: 320px;
+  width: 100%;
+  transition: all 300ms;
+}
+
+/* XL */
+@media (min-width: 1200px) {
+  .card-post section > a img {
+    width: initial;
+  }
+}
+
+.card-post section > a img:hover {
+  box-shadow: 0 7px 30px 0 $hex-000-RGBA;
+}
+
+.card-post section > div a[rel] {
+  color: $hex-0f1;
+  font-size: $px-11;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-post section p {
+  font-size: $px-14;
+  max-width: 500px;
+  margin-top: 5px;
+}

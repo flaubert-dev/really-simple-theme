@@ -2,9 +2,14 @@
   * ASIDE
 **/
 
+.aside {
+  margin-top: 20px;
+}
+
 /* XL */
 @media (min-width: 1200px) {
   .aside {
+    margin-top: 0;
     position: absolute;
     top: 0;
     right: 0;

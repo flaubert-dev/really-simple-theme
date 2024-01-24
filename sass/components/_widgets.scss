@@ -12,6 +12,12 @@
   margin-top: 20px;
 }
 
+.widget-title {
+  font-size: $px-20;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* widget_search */
 .widget_search form {
   display: flex;
@@ -62,4 +68,35 @@
 .widget_search form button:hover {
   background-color: $hex-0f1;
   color: $hex-fff;
+}
+
+/* widget_archive */
+.widget_archive ul {
+  list-style: none;
+}
+
+.widget_archive ul li {
+  font-size: $px-12;
+}
+
+.widget_archive ul li + li {
+  margin-top: 10px;
+}
+
+.widget_archive ul li a {
+  border: 1px solid $hex-ccc;
+  display: block;
+  font-size: $px-14;
+  padding: 7px 15px;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.widget_archive ul li a:hover {
+  background-color: $hex-0f1;
+  color: $hex-fff;
+}
+
+.widget_archive select[name="archive-dropdown"] {
+  width: 100%;
 }

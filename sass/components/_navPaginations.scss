@@ -1,5 +1,5 @@
 /** 
-  * NAVIGATION
+  * NAV PAGINATIONS
 **/
 
 .navigation {
@@ -10,11 +10,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-}
 
-/* XL (desktop) */
-@media (min-width: 1366px) {
-  .navigation > .nav-links {
+  @include breakpoint( xl ) {
     column-gap: 10px;
     row-gap: 0;
     flex-direction: row;

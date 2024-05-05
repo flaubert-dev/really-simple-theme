@@ -22,11 +22,8 @@
 .widget_search form {
   display: flex;
   flex-direction: column;
-}
 
-/* XL (desktop) */
-@media (min-width: 1366px) {
-  .widget_search form {
+  @include breakpoint( xl ) {
     flex-direction: row;
   }
 }
@@ -37,11 +34,8 @@
   border-radius: 3px 3px 0 0;
   padding: 10px;
   width: 100%;
-}
 
-/* XL (desktop) */
-@media (min-width: 1366px) {
-  .widget_search form input {
+  @include breakpoint( xl ) {
     border-bottom: 1px solid $hex-ccc;
     border-radius: 3px 0 0 3px;
     width: 220px;
@@ -56,11 +50,8 @@
   flex: 1;
   padding: 7px;
   transition: all 300ms;
-}
 
-/* XL (desktop) */
-@media (min-width: 1366px) {
-  .widget_search form button {
+  @include breakpoint( xl ) {
     border-radius: 0 3px 3px 0;
   }
 }

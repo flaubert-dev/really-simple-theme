@@ -51,8 +51,7 @@
   width: 18px;
 }
 
-/* MD (tablet) */
-@media (min-width: 753px) {
+@include breakpoint( md ) {
   .btn--navOpen,
   .btn--navClose {
     display: none;

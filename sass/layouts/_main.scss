@@ -11,19 +11,15 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-}
 
-/* LG (laptop) */
-@media (min-width: 1025px) {
-  .main > .container {
+  @include breakpoint( lg ) {
     column-gap: 20px;
     flex-direction: row;
+    justify-content: space-between;
   }
-}
 
-/* XL (desktop) */
-@media (min-width: 1366px) {
-  .main > .container {
+  @include breakpoint( xl ) {
     column-gap: 35px;
+    justify-content: space-between;
   }
 }

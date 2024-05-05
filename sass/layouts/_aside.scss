@@ -2,8 +2,7 @@
   * ASIDE
 **/
 
-/* LG (laptop) */
-@media (min-width: 1025px) {
+@include breakpoint( lg ) {
   .aside {
     min-width: 350px;
     max-width: 350px;

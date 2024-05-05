@@ -26,15 +26,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "./base/5_container";
 @import "./base/6_alignments";
 @import "./base/7_accessibility";
+
 @import "./components/btns";
 @import "./components/cards";
 @import "./components/forms";
-@import "./components/navigation";
+@import "./components/navMenus";
+@import "./components/navPaginations";
 @import "./components/widgets";
+
 @import "./layouts/aside";
 @import "./layouts/footer";
 @import "./layouts/header";
 @import "./layouts/main";
+
 @import "./pages/page404";
 @import "./pages/pageArchive";
 @import "./pages/pageBlog";

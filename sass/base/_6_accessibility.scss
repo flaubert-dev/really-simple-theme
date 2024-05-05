@@ -13,12 +13,13 @@
   padding: 10px 15px;
   position: absolute;
   pointer-events: none;
-  top: 55px;
+  top: -100px;
   left: 5px;
   z-index: -1000;
 }
 
 .skip-link:focus {
+  top: 60px;
   pointer-events: initial;
   z-index: 1000;
 }

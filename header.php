@@ -17,9 +17,7 @@
 
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
-
   <?php wp_head(); ?>
 </head>
 
@@ -27,9 +25,7 @@
   <?php wp_body_open(); ?>
 
   <header class="header">
-    <div class="container">
-      <?php get_template_part( 'template-parts/content', 'header' ); ?>
-    </div>
+    <?php get_template_part( 'template-parts/content', 'header' ); ?>
   </header>
 
   <main id="main" class="main"><!-- main -->

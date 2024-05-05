@@ -12,8 +12,8 @@
   row-gap: 10px;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+/* XL (desktop) */
+@media (min-width: 1366px) {
   .navigation > .nav-links {
     column-gap: 10px;
     row-gap: 0;

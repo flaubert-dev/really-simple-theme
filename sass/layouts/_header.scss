@@ -5,11 +5,8 @@
 .header {
   background-color: $hex-fff;
   border-bottom: 2px solid $hex-263-RGBA;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.header > .container {
+  padding: 12px 20px 12px 20px;
+  display: flex;
   column-gap: 20px;
   flex-direction: row;
   align-items: center;
@@ -101,12 +98,7 @@
 }
 
 /* MD (tablet) */
-@media (min-width: 768px) {
-  .header > .container {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-
+@media (min-width: 753px) {
   .header__title {
     font-size: $px-26;
   }
@@ -203,11 +195,9 @@
 }
 
 /* XL (desktop) */
-@media (min-width: 1200px) {
-  .header > .container {
+@media (min-width: 1366px) {
+  .header {
     column-gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .really-first-menu {

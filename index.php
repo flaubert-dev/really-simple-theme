@@ -12,19 +12,8 @@
  * @package Really Simple
  */
 
-get_header(); ?><!-- header -->
+get_header();
 
-<?php if( is_home() && !is_paged() ) : ?>
-  <?php if( get_bloginfo( 'description' ) ) : ?>
-    <h1>
-      <?php echo esc_html( get_bloginfo( 'description' ) ); ?>
-    </h1>
-  <?php endif; ?>
-<?php endif; ?>
+get_template_part( 'template-parts/content' );
 
-<!-- content -->
-<?php get_template_part( 'template-parts/content' ); ?>
-
-<!-- footer -->
-<?php
-  get_footer();
+get_footer();

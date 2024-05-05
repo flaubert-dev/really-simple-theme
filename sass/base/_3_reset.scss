@@ -6,6 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  word-wrap: break-word;
   margin: 0;
   padding: 0;
 }
@@ -17,24 +18,25 @@
   line-height: $px-24;
 }
 
+body {
+  background-color: $hex-f5f;
+}
+
 img {
   display: block;
   max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
-a {
+a[href] {
   color: $hex-416;
   text-decoration: none;
 }
 
-a:hover {
+a[href]:hover {
   color: $hex-191;
   text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6, a, p {
-  word-wrap: break-word;
 }
 
 pre {

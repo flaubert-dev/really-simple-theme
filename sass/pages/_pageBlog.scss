@@ -1,3 +1,10 @@
 /** 
   * PAGE blog
 **/
+
+body.blog section > h1.title-seo,
+body.home section > h1.title-seo {
+  color: transparent;
+  position: absolute;
+  z-index: -1000;
+}

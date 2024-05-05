@@ -3,13 +3,27 @@
 **/
 
 .main {
-  background-color: $hex-f5f;
   padding: 50px 0;
+  min-height: 500px;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+.main > .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* LG (laptop) */
+@media (min-width: 1025px) {
   .main > .container {
-    position: relative;
+    column-gap: 20px;
+    flex-direction: row;
+  }
+}
+
+/* XL (desktop) */
+@media (min-width: 1366px) {
+  .main > .container {
+    column-gap: 35px;
   }
 }

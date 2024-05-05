@@ -11,15 +11,15 @@
   transition: all 300ms;
 }
 
-/* XL */
-@media (min-width: 1200px) {
-  .card-post {
-    max-width: 800px;
-  }
+.card-post + .card-post {
+  margin-top: 20px;
 }
 
-.card-post + .card-post {
-  margin-top: 35px;
+/* LG (laptop) */
+@media (min-width: 1025px) {
+  .card-post + .card-post {
+    margin-top: 35px;
+  }
 }
 
 .card-post:hover {
@@ -55,8 +55,8 @@
   row-gap: 20px;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+/* XL (desktop) */
+@media (min-width: 1366px) {
   .card-post section {
     column-gap: 20px;
     row-gap: 0;
@@ -81,8 +81,8 @@
   transition: all 300ms;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+/* XL (desktop) */
+@media (min-width: 1366px) {
   .card-post section > a img {
     width: initial;
   }

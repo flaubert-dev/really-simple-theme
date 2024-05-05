@@ -2,19 +2,9 @@
   * ASIDE
 **/
 
-.aside {
-  margin-top: 20px;
-}
-
-/* XL */
-@media (min-width: 1200px) {
+/* LG (laptop) */
+@media (min-width: 1025px) {
   .aside {
-    margin-top: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
     min-width: 350px;
     max-width: 350px;
   }

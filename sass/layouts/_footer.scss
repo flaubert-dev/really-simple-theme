@@ -9,12 +9,15 @@
 }
 
 .footer > .container {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 5px;
+  row-gap: 5px;
   justify-content: center;
   padding: 20px 0;
 }
 
 .footer__copy {
-  text-transform: capitalize;
+  text-align: center;
 }

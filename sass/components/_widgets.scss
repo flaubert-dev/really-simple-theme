@@ -24,8 +24,8 @@
   flex-direction: column;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+/* XL (desktop) */
+@media (min-width: 1366px) {
   .widget_search form {
     flex-direction: row;
   }
@@ -39,8 +39,8 @@
   width: 100%;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+/* XL (desktop) */
+@media (min-width: 1366px) {
   .widget_search form input {
     border-bottom: 1px solid $hex-ccc;
     border-radius: 3px 0 0 3px;
@@ -58,8 +58,8 @@
   transition: all 300ms;
 }
 
-/* XL */
-@media (min-width: 1200px) {
+/* XL (desktop) */
+@media (min-width: 1366px) {
   .widget_search form button {
     border-radius: 0 3px 3px 0;
   }

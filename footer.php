@@ -13,8 +13,7 @@
 
       <?php 
         if( !is_page() && !is_search() && !is_404() && !is_date() && is_active_sidebar( 'really-simple-sidebar-1' ) ) : ?>
-        <!-- sidebar -->
-        <aside class="aside">
+        <aside class="aside"><!-- sidebar -->
           <?php 
             if( is_active_sidebar( 'really-simple-sidebar-1' ) ) {
               dynamic_sidebar( 'really-simple-sidebar-1' );

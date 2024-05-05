@@ -34,7 +34,7 @@ class ReallySimpleAdminBars
 		$admin_bar->add_menu([
 			'id'		  => 'really-simple-admin-bar',
 			'parent'	=> null,
-			'title'		=> esc_html__( 'Really Simple Theme', 'really-simple' ),
+			'title'		=> esc_html__( 'Really Simple Theme', 'really-simple' ) . esc_html__( ' v', 'really-simple' ) . wp_get_theme()['Version'],
 			'href'		=> 'https://wordpress.org/themes/really-simple/',
 			'meta'    => [ 'target' => '_blank' ],
 		]);

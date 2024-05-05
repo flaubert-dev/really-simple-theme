@@ -1,6 +1,6 @@
 === Really Simple ===
 Requires at least: WordPress 5.3
-Tested up to: WordPress 6.4
+Tested up to: WordPress 6.5
 Requires PHP: 7.0
 Version: 2.0.0
 Stable tag: 2.0.0
@@ -35,7 +35,7 @@ Yes. Really Simple Theme is 100% AMP compatible.
 We offer premium support, read more in (https://profiles.wordpress.org/flauberthenriques/).
 
 = Do you accept donations? =
-Yes. You can help us a lot by sending any amount to this paypal account: flaubinhoo@gmail.com
+Yes. You can help us a lot by sending any amount to this PayPal account: flaubinhoo@gmail.com
 
 = Does Really Simple Theme have an official repository on github? =
 Yes. Open source is here (https://github.com/Dev-Flaubert-Wordpress/really-simple-theme)
@@ -89,7 +89,7 @@ Source:
 - Revision: readme.md
 - Revision: admin-bar.php, footer.php
 - Updated: readme.txt (Tested up to WordPress 6.1)
-- Updated: gulpfile.js (ports (proxy)
+- Updated: gulpfile.js ports (proxy)
 
 = 1.1 - May 22 2022 =
 - New: Added "Really Simple Theme" option in admin bar

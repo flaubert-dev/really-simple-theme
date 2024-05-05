@@ -4,18 +4,23 @@
 **/
 
 .container {
-  display: flex;
-  flex-direction: column;
   min-width: 200px;
-  max-width: 1200px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* XL (desktop) */
-@media (min-width: 1200px) {
+/* LG (laptop) */
+@media (min-width: 1025px) {
   .container {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* XL (desktop) */
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1234px;
   }
 }

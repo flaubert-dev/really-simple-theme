@@ -51,8 +51,8 @@
   width: 18px;
 }
 
-/* MD */
-@media (min-width: 768px) {
+/* MD (tablet) */
+@media (min-width: 753px) {
   .btn--navOpen,
   .btn--navClose {
     display: none;

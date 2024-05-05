@@ -7,18 +7,10 @@
  * @package Really Simple
  */
 
-get_header(); ?><!-- header -->
+get_header(); 
+    
+printf( esc_html__( 'Search Results for: %s', 'really-simple' ), '<span>' . get_search_query() . '</span>' ); // translators: %s: search query
 
-<h1>
-  <?php 
-    /* translators: %s: search query. */
-    printf( esc_html__( 'Search Results for: %s', 'really-simple' ), '<span>' . get_search_query() . '</span>' );
-  ?>
-</h1>
+get_template_part( 'template-parts/content' );
 
-<!-- content -->
-<?php get_template_part( 'template-parts/content' ); ?>
-
-<!-- footer -->
-<?php
-  get_footer();
+get_footer();

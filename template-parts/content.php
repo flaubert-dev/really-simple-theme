@@ -23,36 +23,38 @@
     <article <?php post_class( [ 'card-post' ] ); ?>>
       <header>
         <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?>
-      </header>
 
-      <section>
         <?php if ( has_post_thumbnail() ): ?>
           <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail( 'really-simple-thumb', [ 'class' => 'card-thumb' ] ); ?>
           </a>
         <?php endif; ?>
+      </header>
 
-        <div>
-          <?php
-            the_title( 
-              '<h2 class="card-title">
-                <a href="' . esc_url( get_permalink() ) . '">', '</a>
-              </h2>'
-            );
+      <section>
+        <?php
+          the_title( 
+            '<h2 class="card-title">
+              <a href="' . esc_url( get_permalink() ) . '">', '</a>
+            </h2>'
+          );
 
-            if ( has_category() ) { 
-              the_category( ', ' ); 
-            }
+          if ( has_category() ) { 
+            the_category( ', ' ); 
+          }
 
-            if ( has_excerpt() ) {
-              the_excerpt();
-            } elseif ( strpos( $post->post_content, '<!--more-->' ) ) {
-              the_content( 'Read more' );
-            } else {
-              the_excerpt();
-            }
-          ?>
-        </div>
+          if ( has_excerpt() ) {
+            the_excerpt();
+          } elseif ( strpos( $post->post_content, '<!--more-->' ) ) {
+            the_content( 'Read more' );
+          } else {
+            the_excerpt();
+          }
+        ?>
+
+        <footer>
+          author here
+        </footer>
       </section>
     </article>
   <?php endwhile; ?>

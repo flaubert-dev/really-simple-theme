@@ -4,7 +4,7 @@
 **/
 
 /* px to rem */
-@function rem($px) {
-  $converted: ($px / 16) + rem;
+@function rem( $px ) {
+  $converted: ( $px / 16 ) + rem;
   @return $converted;
 }

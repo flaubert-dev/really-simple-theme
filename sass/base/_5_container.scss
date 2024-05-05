@@ -1,0 +1,25 @@
+/** 
+  * CONTAINER
+  ** MD (tablet: 700px), LG (laptop: 1000px), XL (desktop: 1234px)
+**/
+
+.container {
+  $container-sm: 200px;
+  $container-md: 700px;
+  $container-lg: 1000px;
+  $container-xl: 1234px;
+
+  min-width: $container-sm;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @include breakpoint( lg ) {
+    max-width: $container-lg;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint( xl ) {
+    max-width: $container-xl;
+  }
+}

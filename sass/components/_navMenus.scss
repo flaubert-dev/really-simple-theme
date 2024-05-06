@@ -89,6 +89,30 @@
     row-gap: 5px;
   }
 
+  .really-first-menu .menu-item {
+    @include breakpoint( md ) {
+      &:nth-child(4) ~ .menu-item {
+        display: none;
+      }
+    }
+
+    @include breakpoint( lg ) {
+      &:nth-child(4) ~ .menu-item {
+        display: block;
+      }
+
+      &:nth-child(6) ~ .menu-item {
+        display: none;
+      }
+    }
+
+    @include breakpoint( xl ) {
+      &:nth-child(6) ~ .menu-item {
+        display: block;
+      }
+    }
+  }
+
   .really-first-menu .menu-item a {
     color: $hex-0f1;
     display: block;

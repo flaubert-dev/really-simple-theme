@@ -13,18 +13,18 @@
 <section>
   <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
     <article <?php post_class( [ 'card-post' ] ); ?>>
-      <header>
-        <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?>
-        
-        <?php if ( has_post_thumbnail() ): ?>
+      <?php if ( has_post_thumbnail() ): ?>
+        <header>
           <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail( 'really-simple-type1' ); ?>
           </a>
-        <?php endif; ?>
-      </header>
+        </header>
+      <?php endif; ?>
 
       <section>
         <?php
+          echo '<time>' . esc_html( get_the_date() ) . '</time>';
+
           the_title( 
             '<h2 class="card-title">
               <a href="' . esc_url( get_permalink() ) . '">', '</a>

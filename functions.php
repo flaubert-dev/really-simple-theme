@@ -70,7 +70,7 @@ function really_simple_support() {
    */
   add_theme_support( 'post-thumbnails' );
 
-  add_image_size( 'really-simple-type1', 400, 300, [ 'center', 'top' ] );
+  // add_image_size( 'really-simple-type1', 400, 300, [ 'center', 'top' ] );
   
   if ( ! isset( $content_width ) ) {
     $content_width = 600;

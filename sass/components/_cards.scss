@@ -5,93 +5,85 @@
 .card-post {
   background-color: $hex-fff;
   border-radius: 5px;
-  padding: 20px;
-  padding-top: 35px;
-  position: relative;
   transition: all 300ms;
-}
+  position: relative;
 
-.card-post + .card-post {
-  margin-top: 20px;
+  &:hover {
+    box-shadow: 0 7px 30px 0 $hex-263-RGBA;
+  }
 
-  @include breakpoint( lg ) {
-    margin-top: 35px;
+  header time {
+    background-color: $hex-6f8;
+    border-radius: 5px 5px 0 0;
+    color: $hex-fff;
+    display: block;
+    font-size: $px-12;
+    font-weight: 700;
+    padding: 7px;
+    text-align: center;
+  }
+
+  header a img {
+    max-height: 200px;
+    margin: 0 auto;
+    opacity: 1;
+    transition: all 300ms;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  section .card-title a {
+    color: $hex-0f1;
+    display: block;
+    font-size: $px-20;
+    margin-bottom: 7px;
+    word-break: break-word;
+  }
+
+  section .post-categories {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  section .post-categories a[rel] {
+    border: 1px solid $hex-ccc;
+    color: $hex-6f8;
+    font-size: $px-10;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 5px;
+  }
+
+  section p {
+    color: $hex-6f8;
+    font-size: $px-14;
+    line-height: 1.5;
+    height: 90px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 7px;
+    right: 15px;
+  }
+
+  footer a[rel="author"] {
+    color: $hex-0f1;
+    display: block;
+    font-size: $px-12;
+    font-weight: 700;
+    padding-bottom: 3.5px;
+    text-align: center;
   }
 }
-
-.card-post:hover {
-  box-shadow: 0 7px 30px 0 $hex-263-RGBA;
-}
-
-// .card-post header,
-// .card-post footer {
-//   position: absolute;
-//   right: 0;
-// }
-
-// .card-post header {
-//   border-left: 1px solid $hex-263-RGBA;
-//   border-bottom: 1px solid $hex-263-RGBA;
-//   top: 0;
-//   text-transform: lowercase;
-// }
-
-// .card-post header::first-letter {
-//   text-transform: uppercase;
-// }
-
-// .card-post header time {
-//   font-size: $px-12;
-//   font-weight: 700;
-//   padding: 3px 10px;
-// }
-
-// .card-post section {
-//   display: flex;
-//   flex-direction: column;
-//   row-gap: 20px;
-
-//   @include breakpoint( xl ) {
-//     column-gap: 20px;
-//     row-gap: 0;
-//     flex-direction: row;
-//   }
-// }
-
-// .card-post section .card-title {
-//   margin-bottom: 5px;
-//   max-width: 600px;
-// }
-
-// .card-post section .card-title a {
-//   color: $hex-0f1;
-//   font-size: $px-20;
-// }
-
-// .card-post section > a img {
-//   border-radius: 5px;
-//   min-width: 320px;
-//   width: 100%;
-//   transition: all 300ms;
-
-//   @include breakpoint( xl ) {
-//     width: initial;
-//   }
-// }
-
-// .card-post section > a img:hover {
-//   box-shadow: 0 7px 30px 0 $hex-000-RGBA;
-// }
-
-// .card-post section > div a[rel] {
-//   color: $hex-0f1;
-//   font-size: $px-11;
-//   font-weight: 700;
-//   text-transform: uppercase;
-// }
-
-// .card-post section p {
-//   font-size: $px-14;
-//   max-width: 500px;
-//   margin-top: 5px;
-// }

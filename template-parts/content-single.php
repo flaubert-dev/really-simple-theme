@@ -24,7 +24,7 @@ while( have_posts() ) : the_post(); ?>
   <section>
     <?php 
       if( has_post_thumbnail() ): 
-        the_post_thumbnail( 'full', [ 'class' => 'card-thumb' ] );
+        the_post_thumbnail();
       endif;
     ?>
 

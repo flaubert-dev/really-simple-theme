@@ -6,6 +6,7 @@
   background-color: $hex-fff;
   border-top: 2px solid $hex-263-RGBA;
   color: $hex-586;
+  margin-top: 50px;
 }
 
 .footer > .container {
@@ -15,7 +16,13 @@
   column-gap: 5px;
   row-gap: 5px;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
+}
+
+.footer__copy,
+.footer__theme a {
+  font-size: $px-14;
 }
 
 .footer__copy {

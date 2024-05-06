@@ -3,23 +3,34 @@
 **/
 
 .main {
-  padding: 50px 0;
+  padding-top: 50px;
   min-height: 500px;
-}
 
-.main > .container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-
-  @include breakpoint( lg ) {
-    column-gap: 20px;
-    flex-direction: row;
-    justify-content: space-between;
+  > .title-seo {
+    position: absolute;
+    z-index: -1000;
+    color: transparent;
   }
 
-  @include breakpoint( xl ) {
-    column-gap: 35px;
-    justify-content: space-between;
+  > .container {
+    @include breakpoint( lg ) {
+      display: grid;
+      grid-template-columns: 1fr minmax(350px, 350px);
+      gap: 0 30px;
+    }
+  }
+
+  > .container > section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+    @include breakpoint( md ) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint( lg ) {
+      grid-template-columns: 1fr;
+    }
   }
 }

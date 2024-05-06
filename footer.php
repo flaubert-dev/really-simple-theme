@@ -23,6 +23,14 @@
       <?php endif; ?>
     </div><!-- container -->
   </main><!-- main -->
+  
+  <div class="container">
+    <?php // Pagination
+      if( the_posts_navigation() ) : 
+        the_posts_navigation();
+      endif;
+    ?>
+  </div>
 
   <footer class="footer">
     <div class="container">

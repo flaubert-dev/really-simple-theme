@@ -29,4 +29,12 @@
   </header>
 
   <main id="main" class="main"><!-- main -->
+    <?php 
+      if ( is_home() && !is_paged() ) : 
+        if ( get_bloginfo( 'description' ) ) :
+          echo '<h1 class="title-seo">' . esc_html( get_bloginfo( 'description' ) ) . '</h1>';
+        endif;
+      endif;
+    ?>
+    
     <div class="container"><!-- container -->

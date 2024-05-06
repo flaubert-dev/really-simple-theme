@@ -2,9 +2,10 @@
   * ASIDE
 **/
 
-@include breakpoint( lg ) {
-  .aside {
-    min-width: 350px;
-    max-width: 350px;
+.aside {
+  display: none;
+
+  @include breakpoint( lg ) {
+    display: block;
   }
 }

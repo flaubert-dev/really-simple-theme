@@ -6,11 +6,11 @@
   color: $hex-0f1;
   padding: 5px;
   transition: all 300ms;
-}
 
-.btn:hover {
-  background-color: $hex-f5f;
-  text-decoration: none;
+  &:hover {
+    background-color: $hex-f5f;
+    text-decoration: none;
+  }
 }
 
 /* .btn--navOpen */

@@ -32,11 +32,11 @@ img {
 a[href] {
   color: $hex-416;
   text-decoration: none;
-}
 
-a[href]:hover {
-  color: $hex-191;
-  text-decoration: underline;
+  &:hover {
+    color: $hex-191;
+    text-decoration: underline;
+  }
 }
 
 pre {

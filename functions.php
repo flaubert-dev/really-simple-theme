@@ -69,7 +69,9 @@ function really_simple_support() {
    * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
    */
   add_theme_support( 'post-thumbnails' );
-  add_image_size( 'really-simple-thumb', 370, 247, [ 'center', 'top' ] );
+
+  add_image_size( 'really-simple-type1', 400, 300, [ 'center', 'top' ] );
+  
   if ( ! isset( $content_width ) ) {
     $content_width = 600;
   }
@@ -165,8 +167,8 @@ function really_simple_category_title( $title ) {
 **/
 function really_simple_excerpt_length( $length ) {
 
-  // Return up to 30 words for any abstract
-  return 30;
+  // Return up to 20 words for any abstract
+  return 20;
 } add_filter( 'excerpt_length', 'really_simple_excerpt_length' );
 
 /**

@@ -12,7 +12,6 @@
 }
 
 * {
-  color: $hex-0f1;
   font-size: $px-16;
   font-family: $helvetica;
   line-height: $px-24;
@@ -24,8 +23,17 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+pre {
+  font-family: $courier;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $hex-0f1;
 }
 
 a[href] {
@@ -36,8 +44,4 @@ a[href] {
     color: $hex-191;
     text-decoration: underline;
   }
-}
-
-pre {
-  font-family: $courier;
 }

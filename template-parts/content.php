@@ -12,6 +12,26 @@
 
 <section>
   <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+
+    <?php
+      // ID da imagem destacada
+      $thumbnail_id = get_post_thumbnail_id();
+
+      // Tamanhos de imagem personalizados
+      $size_small = 'really-simple-size-small';
+
+      // URLs e tamanhos das imagens
+      $img_small  = wp_get_attachment_image_src( $thumbnail_id, $size_small );
+
+      var_dump($img_small);
+
+      // echo '<div style="width: 350px;">';
+      echo '<picture>';
+      echo '<img src="' . esc_url( $img_small[0] ) . '" alt="' . get_the_title() . '">';
+      echo '</picture>';
+      // echo '</div>';
+    ?>
+
     <article <?php post_class( [ 'card-post' ] ); ?>>
       <?php if ( has_post_thumbnail() ): ?>
         <header>
@@ -54,5 +74,5 @@
       </footer>
     </article>
 
-    <?php endwhile; else: get_template_part( 'template-parts/content', 'none' ); endif; ?>
+  <?php endwhile; else: get_template_part( 'template-parts/content', 'none' ); endif; ?>
 </section>

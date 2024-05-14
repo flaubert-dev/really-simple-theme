@@ -25,19 +25,19 @@
 
       var_dump($img_small);
 
-      // echo '<div style="width: 350px;">';
       echo '<picture>';
-      echo '<img src="' . esc_url( $img_small[0] ) . '" alt="' . get_the_title() . '">';
+      echo '<img src="' . esc_url( $img_small[0] ) . '" width="' . esc_attr( $img_small[1] ) . '" height="' . esc_attr( $img_small[2] ) . '" alt="' . get_the_title() . '">';
       echo '</picture>';
-      // echo '</div>';
     ?>
 
     <article <?php post_class( [ 'card-post' ] ); ?>>
+      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <?php the_title(); ?>
+      </a>
+
       <?php if ( has_post_thumbnail() ): ?>
         <header>
-          <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail( 'really-simple-type1' ); ?>
-          </a>
+          <?php the_post_thumbnail( 'really-simple-type1' ); ?>
         </header>
       <?php endif; ?>
 
@@ -45,11 +45,7 @@
         <?php
           echo '<time>' . esc_html( get_the_date() ) . '</time>';
 
-          the_title( 
-            '<h2 class="card-title">
-              <a href="' . esc_url( get_permalink() ) . '">', '</a>
-            </h2>'
-          );
+          the_title( '<h2>', '</h2>' );
 
           if ( has_category() ) { 
             the_category(); 
@@ -68,9 +64,7 @@
       </section>
 
       <footer>
-        <?php
-          the_author_posts_link();
-        ?>
+        <?php the_author_posts_link(); ?>
       </footer>
     </article>
 

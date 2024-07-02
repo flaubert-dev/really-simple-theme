@@ -69,10 +69,7 @@ function really_simple_support() {
    * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
    */
   add_theme_support( 'post-thumbnails' );
-
-  add_image_size( 'really-simple-size-small', 400, 300, [ 'center', 'top' ] );
-  // add_image_size( 'really-simple-size-medium', 400, 300, [ 'center', 'top' ] );
-  // add_image_size( 'really-simple-size-large', 400, 300, [ 'center', 'top' ] );
+  add_image_size( 'really-simple-size-small', 400, 300 );
   
   if ( ! isset( $content_width ) ) {
     $content_width = 600;

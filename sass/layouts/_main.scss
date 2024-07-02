@@ -15,8 +15,8 @@
   > .container {
     @include breakpoint( lg ) {
       display: grid;
-      grid-template-columns: 1fr minmax(350px, 350px);
-      gap: 0 30px;
+      grid-template-columns: 1fr minmax(290px, 290px);
+      gap: 0 20px;
     }
   }
 

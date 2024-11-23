@@ -45,6 +45,7 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 - [WordPress](https://wordpress.org/) >= 5.3
 - [Node.js](https://nodejs.org/en) <= v12.22.12
 - [NPM](https://www.npmjs.com/) <= v6.14.16
+- [gulp-cli](https://www.npmjs.com/package/gulp-cli) >= 3.0.0
 
 > Plugins for Development
 - [Classic Widgets](https://wordpress.org/plugins/classic-widgets/)

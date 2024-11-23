@@ -282,20 +282,25 @@
   color: $blue-dark;
 }
 
+/* paperclip svg */
+.paperclip {
+  display: none;
+}
+
 /* sticky post */
 .sticky {
   background: $gray-5;
   position: relative;
 }
 
-.sticky .card-body::after {
-  /* paperclip emoji */
-  content: "\1F4CE";
+.sticky .paperclip {
+  /* paperclip svg */
   color: $black;
-  font-size: 1.1rem;
+  display: block;
+  width: 20px;
   position: absolute;
-  right: 7px;
-  top: 2px;
+  right: 8px;
+  top: 7px;
 }
 
 .updated:not(.published) {

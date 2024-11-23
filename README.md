@@ -58,9 +58,9 @@ Really Simple is a theme for bloggers and writers who need a ultra light and fas
 - [Monster Widget](https://wordpress.org/plugins/monster-widget/)
 
 > Validation
+- [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test)
 - [HTML](https://validator.w3.org/#validate_by_upload+with_options)
 - [CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
-- [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test)
 
 ## Details / Suggestions
 

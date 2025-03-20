@@ -5,7 +5,7 @@ Theme URI: https://github.com/flaubert-dev/really-simple-theme#really-simple-the
 Author: Flaubert Henriques
 Author URI: https://profiles.wordpress.org/flauberthenriques/
 Description: Really Simple is a theme for bloggers and writers who need a ultra light and fast theme. The theme focuses on simplicity and loading speed. Yes, Really Simple Theme is also fully AMP compatible. Check the >> readme.txt << file and leave the sidebar perfect after WordPress 5.8 update.
-Version: 1.3.1
+Version: 1.3.2
 Requires at least: WordPress 5.3
 Tested up to: WordPress 6.7
 Requires PHP: 7.0
@@ -965,7 +965,6 @@ textarea {
   padding: 5px 10px;
   position: absolute;
   right: 0px;
-  text-transform: capitalize;
 }
 
 .post-card .card-body a:hover,
@@ -977,25 +976,42 @@ textarea {
   color: #191970;
 }
 
-/* paperclip svg */
-.paperclip {
+/* post and sticky post */
+article.status-publish > .card-body div.paperclip:last-child,
+article.status-publish > .card-body div.paperclip:last-child svg {
+  background: transparent;
   display: none;
+  width: 0;
+  height: 0;
 }
 
-/* sticky post */
-.sticky {
-  background: #e2e6e9;
-  position: relative;
+article.post-card,
+article.post-card.sticky {
+  position: relative !important;
 }
 
-.sticky .paperclip {
-  /* paperclip svg */
-  color: #0f161a;
-  display: block;
-  width: 20px;
-  position: absolute;
-  right: 8px;
-  top: 7px;
+article.post-card.sticky {
+  background: #e2e6e9 !important;
+}
+
+/* sticky post ( svg paperclip ) */
+article.post-card.sticky > .card-body div.paperclip:last-child,
+article.post-card.sticky > .card-body div.paperclip:last-child svg {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+article.post-card.sticky > .card-body div.paperclip:last-child svg {
+  color: #0f161a !important;
+}
+
+article.post-card.sticky > .card-body div.paperclip:last-child {
+  background: transparent !important;
+  position: absolute !important;
+  right: 8px !important;
+  top: 7px !important;
+  z-index: 10 !important;
 }
 
 .updated:not(.published) {

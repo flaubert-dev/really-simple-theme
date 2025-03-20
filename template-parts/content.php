@@ -19,7 +19,6 @@
   <?php endif; ?><!-- .card-media --> 
 
   <div class="card-body">
-    
     <?php echo '<time>' . esc_html( get_the_date() ) . '</time>'; ?><!-- date/time -->
 
     <header class="entry-header">
@@ -46,16 +45,20 @@
       ?>
     </div><!-- .entry-content --> 
 
-    <?php the_author_posts_link(); ?><!-- author -->
+    <?php the_author_posts_link(); // author ?>
 
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         fill="none" 
-         viewBox="0 0 24 24" 
-         stroke-width="1.5" 
-         stroke="currentColor" 
-         class="paperclip">
-      <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
-    </svg><!-- paperclip (sticky post) -->
+    <?php if ( is_sticky() ) : // sticky post ?>
+      <div class="paperclip" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             fill="none" 
+             viewBox="0 0 24 24" 
+             stroke-width="1.5" 
+             stroke="currentColor"
+             style="display: none;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+        </svg>
+      </div><!-- paperclip (sticky post) -->
+    <?php endif; ?>
   </div><!-- .card-body -->
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>

@@ -2,8 +2,8 @@
 Requires at least: WordPress 5.3
 Tested up to: WordPress 6.7
 Requires PHP: 7.0
-Version: 1.3.1
-Stable tag: 1.3.1
+Version: 1.3.2
+Stable tag: 1.3.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,6 +65,10 @@ Source:
 - https://stocksnap.io/photo/woman-working-9YZ9JQIHRH
 
 == Changelog ==
+
+= 1.3.2 - March 20 2025 =
+
+- Improvements to the paperclip icon stick logic
 
 = 1.3.1 - November 23 2024 =
 - Fixed: Stick icon paperclip

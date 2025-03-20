@@ -270,7 +270,6 @@
   padding: 5px 10px;
   position: absolute;
   right: 0px;
-  text-transform: capitalize;
 }
 
 .post-card .card-body a:hover,
@@ -282,25 +281,42 @@
   color: $blue-dark;
 }
 
-/* paperclip svg */
-.paperclip {
+/* post and sticky post */
+article.status-publish > .card-body div.paperclip:last-child,
+article.status-publish > .card-body div.paperclip:last-child svg {
+  background: transparent;
   display: none;
+  width: 0;
+  height: 0;
 }
 
-/* sticky post */
-.sticky {
-  background: $gray-5;
-  position: relative;
+article.post-card,
+article.post-card.sticky {
+  position: relative !important;
 }
 
-.sticky .paperclip {
-  /* paperclip svg */
-  color: $black;
-  display: block;
-  width: 20px;
-  position: absolute;
-  right: 8px;
-  top: 7px;
+article.post-card.sticky {
+  background: $gray-5 !important;
+}
+
+/* sticky post ( svg paperclip ) */
+article.post-card.sticky > .card-body div.paperclip:last-child,
+article.post-card.sticky > .card-body div.paperclip:last-child svg {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+article.post-card.sticky > .card-body div.paperclip:last-child svg {
+  color: $black !important;
+}
+
+article.post-card.sticky > .card-body div.paperclip:last-child {
+  background: transparent !important;
+  position: absolute !important;
+  right: 8px !important;
+  top: 7px !important;
+  z-index: 10 !important;
 }
 
 .updated:not(.published) {

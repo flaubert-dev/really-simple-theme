@@ -9,5 +9,5 @@
  */
 
  // If no content, display the following message
- echo '<p>' . esc_html_e( 'There are no posts yet. Post something interesting.', 'really-simple' ) . '</p>';
+ echo '<p>' . esc_html__( 'There are no posts yet. Post something interesting.', 'really-simple' ) . '</p>';
  
